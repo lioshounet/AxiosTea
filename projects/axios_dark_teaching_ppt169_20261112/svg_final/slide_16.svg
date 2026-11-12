@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">【代码解析 3】</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">cancel.ts 唯一指纹哈希与 Map 注册表管理源码剖析</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">原生现代 AbortController 替代废弃 CancelToken 的工业级实现</text>
+  </g>
+
+  
+  <g id="code-main-container" data-pptx-bounds="60 190 1160 375">
+    <rect x="60" y="194" width="1160" height="371" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="1160" height="371" rx="14" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="60" y="190" width="1160" height="36" rx="14" fill="#1E293B" />
+    <circle cx="85" cy="208" r="5" fill="#EF4444" />
+    <circle cx="100" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="115" cy="208" r="5" fill="#10B981" />
+    <text x="640" y="213" font-size="14" font-weight="bold" fill="#94A3B8" text-anchor="middle">TypeScript 工业级网络切面源码精读 · IDE 控制台视图</text>
+    <text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="260">
+      <tspan><tspan fill="#475569"> 1  </tspan><tspan fill="#64748B">// client/src/utils/cancel.ts</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="284"><tspan><tspan fill="#475569"> 2  </tspan><tspan fill="#E2E8F0">const pendingMap = new Map&lt;string, AbortController&gt;();</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="308"><tspan><tspan fill="#475569"> 3  </tspan><tspan fill="#E2E8F0" /></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="332"><tspan><tspan fill="#475569"> 4  </tspan><tspan fill="#E2E8F0">export function generateRequestKey(config: AxiosRequestConfig): string {</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="356"><tspan><tspan fill="#475569"> 5  </tspan><tspan fill="#E2E8F0">  const { method, url, params, data } = config;</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="380"><tspan><tspan fill="#475569"> 6  </tspan><tspan fill="#E2E8F0">  return [method, url, JSON.stringify(params), JSON.stringify(data)].join('&amp;');</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="404"><tspan><tspan fill="#475569"> 7  </tspan><tspan fill="#E2E8F0">}</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="428"><tspan><tspan fill="#475569"> 8  </tspan><tspan fill="#E2E8F0" /></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="452"><tspan><tspan fill="#475569"> 9  </tspan><tspan fill="#E2E8F0">export function addPendingRequest(config: AxiosRequestConfig): void {</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="476"><tspan><tspan fill="#475569">10  </tspan><tspan fill="#E2E8F0">  const requestKey = generateRequestKey(config);</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="500"><tspan><tspan fill="#475569">11  </tspan><tspan fill="#64748B">  // 若已存在相同请求，立即撤销前序请求</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="524"><tspan><tspan fill="#475569">12  </tspan><tspan fill="#E2E8F0">  if (pendingMap.has(requestKey)) {</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="548"><tspan><tspan fill="#475569">13  </tspan><tspan fill="#E2E8F0">    const controller = pendingMap.get(requestKey);</tspan></tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#38BDF8" />
+    <text fill="#38BDF8" font-weight="bold" font-size="14" x="95" y="618">
+      <tspan>💡 架构核心解析：【版本演进】彻底淘汰已废弃的 CancelToken，拥抱现代 Web 原生 AbortController 标准规范。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">16 / 30</text>
+  </g>
+
+</svg>

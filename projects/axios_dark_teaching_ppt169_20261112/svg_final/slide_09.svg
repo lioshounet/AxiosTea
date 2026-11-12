@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">核心要点二 · 双Token</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">核心要点二：双 Token 鉴权体系设计哲学与前后端联动</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">安全防窃密与平滑用户体验的极致工程平衡</text>
+  </g>
+
+  
+  <g id="card-01" data-pptx-bounds="60 190 360 375">
+    <rect x="60" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="80" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="96" y="232" font-size="16" font-weight="bold" fill="#38BDF8" text-anchor="middle">01</text>
+    <text x="120" y="232" font-size="18" font-weight="bold" fill="#38BDF8">短命 AccessToken (15秒)</text>
+    <line x1="80" y1="258" x2="400" y2="258" stroke="#334155" stroke-width="1" />
+    <text fill="#CBD5E1" font-size="14" x="84" y="290">
+      <tspan>用于所有日常业务接口的身份鉴权，</tspan></text><text fill="#CBD5E1" font-size="14" x="84" y="312">由请求拦截器自动装配在 Authorization 头</text><text fill="#CBD5E1" font-size="14" x="84" y="334"><tspan>中，过期后立即失效防止泄露。</tspan>
+    </text></g>
+  
+  <g id="card-02" data-pptx-bounds="460 190 360 375">
+    <rect x="460" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="460" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="480" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <text x="496" y="232" font-size="16" font-weight="bold" fill="#10B981" text-anchor="middle">02</text>
+    <text x="520" y="232" font-size="18" font-weight="bold" fill="#10B981">长命 RefreshToken (7天)</text>
+    <line x1="480" y1="258" x2="800" y2="258" stroke="#334155" stroke-width="1" />
+    <text fill="#CBD5E1" font-size="14" x="484" y="290">
+      <tspan>存放在安全的本地存储中，专职用于在</tspan></text><text fill="#CBD5E1" font-size="14" x="484" y="312">AccessToken 过期时调用 /api/auth/refresh</text><text fill="#CBD5E1" font-size="14" x="484" y="334"><tspan>接口换取新的访问凭据。</tspan>
+    </text></g>
+  
+  <g id="card-03" data-pptx-bounds="860 190 360 375">
+    <rect x="860" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="860" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="880" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#F59E0B" stroke-width="1" />
+    <text x="896" y="232" font-size="16" font-weight="bold" fill="#F59E0B" text-anchor="middle">03</text>
+    <text x="920" y="232" font-size="18" font-weight="bold" fill="#F59E0B">后端 Express 接口联动</text>
+    <line x1="880" y1="258" x2="1200" y2="258" stroke="#334155" stroke-width="1" />
+    <text fill="#CBD5E1" font-size="14" x="884" y="290">
+      <tspan>Node.js 后端 verifyToken 中间件精准校验</tspan></text><text fill="#CBD5E1" font-size="14" x="884" y="312">15s 时效，并在 /api/auth/refresh 接口完成</text><text fill="#CBD5E1" font-size="14" x="884" y="334"><tspan>令牌轮转更新。</tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#38BDF8" />
+    <text fill="#38BDF8" font-weight="bold" font-size="14" x="95" y="618">
+      <tspan>💡 架构核心解析：【架构价值】兼具极高的安全防御能力（短期凭据降低泄漏窗口）与无感的连续登录体验。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">09 / 30</text>
+  </g>
+
+</svg>

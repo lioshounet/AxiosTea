@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">核心要点四 · 细粒控制</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">细粒度接口控制：自定义文案、指定挂载容器与静默请求</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">兼顾全局统一遮罩与局部按需控制的灵活设计</text>
+  </g>
+
+  <!-- Column 1 Card -->
+  <g id="card-01" data-pptx-bounds="60 190 360 375">
+    <rect x="60" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="80" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="96" y="232" font-size="16" font-weight="bold" fill="#38BDF8" text-anchor="middle">01</text>
+    <text x="120" y="232" font-size="18" font-weight="bold" fill="#38BDF8">自定义 Loading 文案</text>
+    <line x1="80" y1="258" x2="400" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="84" y="290" font-size="14" fill="#CBD5E1">
+      <tspan x="84" dy="0">支持在接口请求时传入 loadingText: '正在生</tspan><tspan x="84" dy="22">成报表中...'，动态展示专业上下文提示，</tspan><tspan x="84" dy="22">提升等待体验。</tspan>
+    </text>
+  </g>
+  <!-- Column 2 Card -->
+  <g id="card-02" data-pptx-bounds="460 190 360 375">
+    <rect x="460" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="460" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="480" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <text x="496" y="232" font-size="16" font-weight="bold" fill="#10B981" text-anchor="middle">02</text>
+    <text x="520" y="222" font-size="15" font-weight="bold" fill="#10B981">
+      <tspan x="520" dy="0">静默请求 (showLoading:</tspan>
+      <tspan x="520" dy="19">false)</tspan>
+    </text>
+    <line x1="480" y1="258" x2="800" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="484" y="290" font-size="14" fill="#CBD5E1">
+      <tspan x="484" dy="0">下拉联想补全、心跳保活检测、后台轮询等接</tspan><tspan x="484" dy="22">口，显式配置关闭遮罩，避免界面频繁被中</tspan><tspan x="484" dy="22">断。</tspan>
+    </text>
+  </g>
+  <!-- Column 3 Card -->
+  <g id="card-03" data-pptx-bounds="860 190 360 375">
+    <rect x="860" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="860" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="880" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#F59E0B" stroke-width="1" />
+    <text x="896" y="232" font-size="16" font-weight="bold" fill="#F59E0B" text-anchor="middle">03</text>
+    <text x="920" y="232" font-size="18" font-weight="bold" fill="#F59E0B">局部容器挂载 (target)</text>
+    <line x1="880" y1="258" x2="1200" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="884" y="290" font-size="14" fill="#CBD5E1">
+      <tspan x="884" dy="0">支持传入 DOM 容器或 CSS 选择器，</tspan><tspan x="884" dy="22">仅在表格、卡片内部展示局部 Loading，</tspan><tspan x="884" dy="22">不遮挡整个页面主视图。</tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#38BDF8" />
+    <text x="95" y="618" font-size="14" font-weight="bold" fill="#38BDF8">
+      <tspan x="95" dy="0">💡 架构核心解析：【设计智慧】通过默认配置保障 80% 常见场景，通过元参数覆盖满足 20% 特殊定制需求。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">20 / 30</text>
+  </g>
+
+</svg>

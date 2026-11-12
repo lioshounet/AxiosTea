@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">【代码解析 6】</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">download.ts 破解大厂深坑：Blob 内嵌 JSON 错误信息精准反解</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">通过 FileReader 异步嗅探还原服务端真实业务报错黑科技</text>
+  </g>
+
+  <!-- Code Highlight Container -->
+  <g id="code-main-container" data-pptx-bounds="60 190 1160 375">
+    <rect x="60" y="194" width="1160" height="371" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="1160" height="371" rx="14" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="60" y="190" width="1160" height="36" rx="14" fill="#1E293B" />
+    <circle cx="85" cy="208" r="5" fill="#EF4444" />
+    <circle cx="100" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="115" cy="208" r="5" fill="#10B981" />
+    <text x="640" y="213" font-size="14" font-weight="bold" fill="#94A3B8" text-anchor="middle">TypeScript 工业级网络切面源码精读 · IDE 控制台视图</text>
+    <text x="85" y="260" font-size="14" font-family="'Microsoft YaHei', Consolas, monospace">
+      <tspan x="85" dy="0"><tspan fill="#475569"> 1  </tspan><tspan fill="#64748B">// client/src/utils/request.ts 响应拦截器</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569"> 2  </tspan><tspan fill="#E2E8F0">if (response.config.responseType === 'blob') {</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569"> 3  </tspan><tspan fill="#64748B">  // 侦测 Content-Type 是否为 JSON（说明后端虽然 HTTP 200，但实际抛出了业务错误）</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569"> 4  </tspan><tspan fill="#E2E8F0">  if (response.data.type === 'application/json') {</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569"> 5  </tspan><tspan fill="#E2E8F0">    return new Promise((_, reject) =&gt; {</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569"> 6  </tspan><tspan fill="#E2E8F0">      const reader = new FileReader();</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569"> 7  </tspan><tspan fill="#E2E8F0">      reader.onload = () =&gt; {</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569"> 8  </tspan><tspan fill="#E2E8F0">        try {</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569"> 9  </tspan><tspan fill="#E2E8F0">          const errorResult = JSON.parse(reader.result as string);</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569">10  </tspan><tspan fill="#E2E8F0">          ElMessage.error(errorResult.message || '导出失败，服务端异常');</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569">11  </tspan><tspan fill="#E2E8F0">          reject(new Error(errorResult.message));</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569">12  </tspan><tspan fill="#E2E8F0">        } catch {</tspan></tspan><tspan x="85" dy="24"><tspan fill="#475569">13  </tspan><tspan fill="#E2E8F0">          reject(new Error('解析 Blob 异常错误失败'));</tspan></tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#38BDF8" />
+    <text x="95" y="618" font-size="14" font-weight="bold" fill="#38BDF8">
+      <tspan x="95" dy="0">💡 架构核心解析：【破坑黑科技】通过检查 data.type 并使用 FileReader 异步回读，完美解决二进制流中隐蔽包装的业务报错。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">27 / 30</text>
+  </g>
+
+</svg>

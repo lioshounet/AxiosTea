@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">架构避坑指南</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">架构安全红线：切忌在拦截器内递归调用带拦截器的实例</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">轻量级 refreshService 独立实例隔离 vs 递归调用主实例的雪崩现场</text>
+  </g>
+
+  <!-- Compare Card compare-card-left -->
+  <g id="compare-card-left" data-pptx-bounds="60 190 560 375">
+    <rect x="60" y="194" width="560" height="371" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="560" height="371" rx="14" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="80" y="210" width="520" height="40" rx="8" fill="#0B0F19" stroke="#EF4444" stroke-width="1" />
+    <rect x="80" y="210" width="8" height="40" rx="4" fill="#EF4444" />
+    <text x="100" y="236" font-size="18" font-weight="bold" fill="#EF4444">致命错误写法 (调用主 service 实例)</text>
+    <line x1="80" y1="265" x2="600" y2="265" stroke="#334155" stroke-width="1" />
+    <text x="84" y="300" font-size="14" fill="#CBD5E1">
+      <tspan x="84" dy="0">在 401 拦截器内部调用 service.post('/api/auth/refresh')</tspan><tspan x="84" dy="24">若该刷新接口本身发生 401（例如 RefreshToken 已过期或被拉黑）</tspan><tspan x="84" dy="24">主实例的拦截器会再次捕获该 401 并再次尝试刷新</tspan><tspan x="84" dy="24">系统陷入无休止的自我递归死循环，瞬间耗尽浏览器连接池并导致内存溢出</tspan><tspan x="84" dy="24">爆栈！</tspan>
+    </text>
+  </g>
+
+  <!-- Compare Card compare-card-right -->
+  <g id="compare-card-right" data-pptx-bounds="660 190 560 375">
+    <rect x="660" y="194" width="560" height="371" rx="14" fill="#060911" />
+    <rect x="660" y="190" width="560" height="371" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="680" y="210" width="520" height="40" rx="8" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <rect x="680" y="210" width="8" height="40" rx="4" fill="#10B981" />
+    <text x="700" y="236" font-size="18" font-weight="bold" fill="#10B981">生产级安全规范 (独立 refreshService)</text>
+    <line x1="680" y1="265" x2="1200" y2="265" stroke="#334155" stroke-width="1" />
+    <text x="684" y="300" font-size="14" fill="#CBD5E1">
+      <tspan x="684" dy="0">单独声明 const refreshService = axios.create({ baseURL })</tspan><tspan x="684" dy="24">该实例绝不挂载任何 401 自动刷新的响应拦截器！</tspan><tspan x="684" dy="24">刷新接口报错时直接返回失败，触发 clearAuth() 并跳转登录页</tspan><tspan x="684" dy="24">彻底切断循环依赖链条，从根本上杜绝死锁与雪崩风险！</tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#38BDF8" />
+    <text x="95" y="618" font-size="14" font-weight="bold" fill="#38BDF8">
+      <tspan x="95" dy="0">💡 架构核心解析：【架构底线】任何从事异常恢复操作的基础客户端，必须与被恢复的宿主客户端严格物理隔离。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">13 / 30</text>
+  </g>
+
+</svg>

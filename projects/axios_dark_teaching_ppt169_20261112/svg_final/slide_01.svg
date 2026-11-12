@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="cover" font-family="'Microsoft YaHei', Arial">
+  
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 48 1160 144">
+    <rect x="60" y="48" width="260" height="30" rx="15" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="68" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">企业级前端网络架构 · 深度实战</text>
+    <text x="60" y="126" font-size="44" font-weight="bold" fill="#F8FAFC">Axios 工业级深度封装与后端联动全景实训</text>
+    <text x="60" y="166" font-size="20" fill="#94A3B8">聚焦网络层核心机制 · 双向切面治理 · 高并发与容错避坑 · Node.js Express 真实联动</text>
+  </g>
+
+  <g id="card-01" data-pptx-bounds="60 205 360 135">
+    <rect x="60" y="209" width="360" height="131" rx="12" fill="#060911" />
+    <rect x="60" y="205" width="360" height="131" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="78" y="221" width="28" height="28" rx="6" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="92" y="241" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">01</text>
+    <text x="116" y="242" font-size="18" font-weight="bold" fill="#38BDF8">双向切面拦截</text>
+    <text fill="#CBD5E1" font-size="14" x="78" y="277">
+      <tspan>请求与响应双拦截器链条，统一错误解包与</tspan></text><text fill="#CBD5E1" font-size="14" x="78" y="299"><tspan>Token 动态注入</tspan>
+    </text></g>
+  <g id="card-02" data-pptx-bounds="460 205 360 135">
+    <rect x="460" y="209" width="360" height="131" rx="12" fill="#060911" />
+    <rect x="460" y="205" width="360" height="131" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="478" y="221" width="28" height="28" rx="6" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <text x="492" y="241" font-size="14" font-weight="bold" fill="#10B981" text-anchor="middle">02</text>
+    <text x="516" y="242" font-size="18" font-weight="bold" fill="#10B981">双 Token 无感并发刷新</text>
+    <text fill="#CBD5E1" font-size="14" x="478" y="277">
+      <tspan>isRefreshing 互斥锁与未决 Promise 挂起队</tspan></text><text fill="#CBD5E1" font-size="14" x="478" y="299"><tspan>列，零感知续期</tspan>
+    </text></g>
+  <g id="card-03" data-pptx-bounds="860 205 360 135">
+    <rect x="860" y="209" width="360" height="131" rx="12" fill="#060911" />
+    <rect x="860" y="205" width="360" height="131" rx="12" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="878" y="221" width="28" height="28" rx="6" fill="#0B0F19" stroke="#EF4444" stroke-width="1" />
+    <text x="892" y="241" font-size="14" font-weight="bold" fill="#EF4444" text-anchor="middle">03</text>
+    <text x="916" y="242" font-size="18" font-weight="bold" fill="#EF4444">AbortController 指纹防重</text>
+    <text fill="#CBD5E1" font-size="14" x="878" y="277">
+      <tspan>请求特征指纹比对，全自动取消未决冲突并</tspan></text><text fill="#CBD5E1" font-size="14" x="878" y="299"><tspan>发，杜绝竞态脏写</tspan>
+    </text></g>
+  <g id="card-04" data-pptx-bounds="60 355 360 135">
+    <rect x="60" y="359" width="360" height="131" rx="12" fill="#060911" />
+    <rect x="60" y="355" width="360" height="131" rx="12" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="78" y="371" width="28" height="28" rx="6" fill="#0B0F19" stroke="#F59E0B" stroke-width="1" />
+    <text x="92" y="391" font-size="14" font-weight="bold" fill="#F59E0B" text-anchor="middle">04</text>
+    <text x="116" y="392" font-size="18" font-weight="bold" fill="#F59E0B">并发安全计数器 Loading</text>
+    <text fill="#CBD5E1" font-size="14" x="78" y="427">
+      <tspan>多接口并行请求遮罩计数器，消除单布尔值闪</tspan></text><text fill="#CBD5E1" font-size="14" x="78" y="449"><tspan>烁过早关闭漏洞</tspan>
+    </text></g>
+  <g id="card-05" data-pptx-bounds="460 355 360 135">
+    <rect x="460" y="359" width="360" height="131" rx="12" fill="#060911" />
+    <rect x="460" y="355" width="360" height="131" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="478" y="371" width="28" height="28" rx="6" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="492" y="391" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">05</text>
+    <text x="516" y="392" font-size="18" font-weight="bold" fill="#38BDF8">智能指数退避重试</text>
+    <text fill="#CBD5E1" font-size="14" x="478" y="427">
+      <tspan>网络抖动自动指数级平滑重试，配置化避开瞬</tspan></text><text fill="#CBD5E1" font-size="14" x="478" y="449"><tspan>时网络雪崩</tspan>
+    </text></g>
+  <g id="card-06" data-pptx-bounds="860 355 360 135">
+    <rect x="860" y="359" width="360" height="131" rx="12" fill="#060911" />
+    <rect x="860" y="355" width="360" height="131" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="878" y="371" width="28" height="28" rx="6" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <text x="892" y="391" font-size="14" font-weight="bold" fill="#10B981" text-anchor="middle">06</text>
+    <text x="916" y="392" font-size="18" font-weight="bold" fill="#10B981">Blob 流下载与异常反解</text>
+    <text fill="#CBD5E1" font-size="14" x="878" y="427">
+      <tspan>RFC 5987 标准解码中文文件名，智能反解错误</tspan></text><text fill="#CBD5E1" font-size="14" x="878" y="449"><tspan>流中的 JSON</tspan>
+    </text></g>
+
+  
+  <g id="bottom-banner" data-pptx-bounds="60 505 1160 88">
+    <rect x="60" y="509" width="1160" height="84" rx="14" fill="#060911" />
+    <rect x="60" y="505" width="1160" height="84" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="505" width="6" height="84" rx="3" fill="#38BDF8" />
+    <text x="90" y="538" font-size="16" font-weight="bold" fill="#38BDF8">🛠️ 教学全栈实训闭环套件：</text>
+    <text x="90" y="568" font-size="14" font-family="'Microsoft YaHei', Consolas, monospace" fill="#CBD5E1">Vue 3 + 全量 TypeScript 严格声明合并 + Pinia 实时链路可视化监视器 + 原生 Node.js Express 对应后端</text>
+  </g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">主讲人：Vue.js / 全栈架构讲师 · 课时：45分钟 · 源码全开源配套</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">01 / 30</text>
+  </g>
+</svg>

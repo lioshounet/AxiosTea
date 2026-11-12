@@ -1,0 +1,37 @@
+{
+  "stage": "stage1",
+  "lang": "zh",
+  "primary_language": "zh-CN",
+  "recommend": {
+    "canvas": "ppt169"
+  },
+  "audience": {
+    "value": "Vue.js 前端开发者、TypeScript 学习者、全栈架构师及大厂前端求职者"
+  },
+  "communication_intent": {
+    "value": "专注于 Axios 工业级深度封装本身与后端 Express 实际接口的真实联动，全面讲透请求与响应双向拦截器、双 Token 无感并发刷新、AbortController 请求指纹防重、并发安全计数器 Loading、指数退避重试以及 Blob 文件流异常反解的底层全链路机理"
+  },
+  "audience_outcome": {
+    "value": "深入掌握 Axios 核心架构原理与模块化解耦封装，打通前端 TypeScript 请求层与后端鉴权、容错、流传输的交互闭环，具备工业级网络中枢的架构设计能力"
+  },
+  "core_message": {
+    "value": "Axios 工业级深度封装：从单点请求工具到生产级全生命周期网络控制中枢，以双向切面治理为基石，以前后端紧密联动为保障"
+  },
+  "delivery_context": {
+    "value": "技术精讲 / 全栈架构实训 / 教学公开课，时长 30-45 分钟，配套前后端真实源码与抓包联动演练"
+  },
+  "artifact_afterlife": {
+    "value": "企业前端网络层标准规范手册、教学教案讲义及大厂技术面试攻坚宝典"
+  },
+  "content_divergence": {
+    "value": ""
+  },
+  "template_options": {
+    "schema_version": 1,
+    "phase": "template",
+    "lang": "zh",
+    "explicit_workspace_roots": [],
+    "default_mode": "free_design"
+  }
+}
+

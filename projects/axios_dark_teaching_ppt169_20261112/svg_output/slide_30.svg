@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="ending" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 140">
+    <rect x="60" y="42" width="260" height="30" rx="15" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="62" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">总结回顾 · 架构进阶</text>
+    <text x="60" y="118" font-size="44" font-weight="bold" fill="#F8FAFC">课程全景技术图谱总结、架构进阶指南与源码仓库</text>
+    <text x="60" y="158" font-size="20" fill="#94A3B8">掌握网络层工业级封装，奠定前端架构进阶之路的坚实基石</text>
+  </g>
+
+  <!-- Pillar 1 -->
+  <g id="ending-pillar-01" data-pptx-bounds="60 190 275 300">
+    <rect x="60" y="194" width="275" height="296" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="275" height="296" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="76" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="92" y="232" font-size="16" font-weight="bold" fill="#38BDF8" text-anchor="middle">01</text>
+    <text x="116" y="232" font-size="15" font-weight="bold" fill="#38BDF8">双向切面治理</text>
+    <line x1="76" y1="258" x2="319" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="78" y="295" font-size="14" fill="#CBD5E1">
+      <tspan x="78" dy="0">实例基线与隔离红线，请求/响应拦</tspan><tspan x="78" dy="22">截器洋葱流水线，统一业务数据解</tspan><tspan x="78" dy="22">包</tspan>
+    </text>
+  </g>
+  <!-- Pillar 2 -->
+  <g id="ending-pillar-02" data-pptx-bounds="355 190 275 300">
+    <rect x="355" y="194" width="275" height="296" rx="14" fill="#060911" />
+    <rect x="355" y="190" width="275" height="296" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="371" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <text x="387" y="232" font-size="16" font-weight="bold" fill="#10B981" text-anchor="middle">02</text>
+    <text x="411" y="232" font-size="15" font-weight="bold" fill="#10B981">双Token无感并发刷新</text>
+    <line x1="371" y1="258" x2="614" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="373" y="295" font-size="14" fill="#CBD5E1">
+      <tspan x="373" dy="0">HTTP 401 拦截切入，isRefreshing</tspan><tspan x="373" dy="22">全局互斥锁，retryQueue 挂起队</tspan><tspan x="373" dy="22">列批量重发</tspan>
+    </text>
+  </g>
+  <!-- Pillar 3 -->
+  <g id="ending-pillar-03" data-pptx-bounds="650 190 275 300">
+    <rect x="650" y="194" width="275" height="296" rx="14" fill="#060911" />
+    <rect x="650" y="190" width="275" height="296" rx="14" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="666" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#F59E0B" stroke-width="1" />
+    <text x="682" y="232" font-size="16" font-weight="bold" fill="#F59E0B" text-anchor="middle">03</text>
+    <text x="706" y="232" font-size="15" font-weight="bold" fill="#F59E0B">防重提交与安全Loading</text>
+    <line x1="666" y1="258" x2="909" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="668" y="295" font-size="14" fill="#CBD5E1">
+      <tspan x="668" dy="0">AbortController 四维哈希请求指</tspan><tspan x="668" dy="22">纹，Counter Pattern 并发安全防</tspan><tspan x="668" dy="22">抖 Loading 状态机</tspan>
+    </text>
+  </g>
+  <!-- Pillar 4 -->
+  <g id="ending-pillar-04" data-pptx-bounds="945 190 275 300">
+    <rect x="945" y="194" width="275" height="296" rx="14" fill="#060911" />
+    <rect x="945" y="190" width="275" height="296" rx="14" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="961" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#EF4444" stroke-width="1" />
+    <text x="977" y="232" font-size="16" font-weight="bold" fill="#EF4444" text-anchor="middle">04</text>
+    <text x="1001" y="232" font-size="15" font-weight="bold" fill="#EF4444">容错重试与类型闭环</text>
+    <line x1="961" y1="258" x2="1204" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="963" y="295" font-size="14" fill="#CBD5E1">
+      <tspan x="963" dy="0">指数退避智能重试防风暴，</tspan><tspan x="963" dy="22">Blob 流 RFC 5987 解码与 JSON 反</tspan><tspan x="963" dy="22">解，TS 声明合并</tspan>
+    </text>
+  </g>
+
+  <!-- Ending Summary Box -->
+  <g id="ending-summary" data-pptx-bounds="60 510 1160 84">
+    <rect x="60" y="514" width="1160" height="80" rx="14" fill="#060911" />
+    <rect x="60" y="510" width="1160" height="80" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="510" width="6" height="80" rx="3" fill="#38BDF8" />
+    <text x="90" y="542" font-size="16" font-weight="bold" fill="#38BDF8">🎯 教学项目源码全开源与学习路径：</text>
+    <text x="90" y="572" font-size="14" font-family="'Microsoft YaHei', Consolas, monospace" fill="#CBD5E1">GitHub 仓库：https://github.com/lioshounet/AxiosTea.git · 涵盖 Vue 3 前端工程与 Express 完整测试用例</text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装实战 · 全套课件完结</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">30 / 30</text>
+  </g>
+</svg>

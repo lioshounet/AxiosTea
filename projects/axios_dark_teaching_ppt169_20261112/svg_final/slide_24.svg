@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">后端联动验证</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">Node.js Express 503 宕机恢复模拟与全链路抓包实战</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">前后端真实接口联动：直观观测前端自动重试成功自愈全流程</text>
+  </g>
+
+  
+  <g id="code-box-left" data-pptx-bounds="60 190 560 375">
+    <rect x="60" y="194" width="560" height="371" rx="12" fill="#060911" />
+    <rect x="60" y="190" width="560" height="371" rx="12" fill="#0F172A" stroke="#EF4444" stroke-width="1.5" />
+    
+    <rect x="60" y="190" width="560" height="36" rx="12" fill="#1E293B" />
+    <circle cx="80" cy="208" r="5" fill="#EF4444" />
+    <circle cx="95" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="110" cy="208" r="5" fill="#10B981" />
+    <text x="340.0" y="213" font-size="13" font-weight="bold" fill="#CBD5E1" text-anchor="middle">后端 Express 模拟 503 接口 (server/index.js)</text>
+    
+    <text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="258">
+      <tspan><tspan fill="#475569"> 1 </tspan><tspan fill="#64748B">// server/index.js</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="280"><tspan><tspan fill="#475569"> 2 </tspan><tspan fill="#E2E8F0">let failCount = 0;</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="302"><tspan><tspan fill="#475569"> 3 </tspan><tspan fill="#E2E8F0">app.get('/api/test/retry-simulation', (req, res) =&gt; {</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="324"><tspan><tspan fill="#475569"> 4 </tspan><tspan fill="#E2E8F0">  failCount++;</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="346"><tspan><tspan fill="#475569"> 5 </tspan><tspan fill="#64748B">  // 前 2 次故意返回 503 模拟宕机，第 3 次恢复正常</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="368"><tspan><tspan fill="#475569"> 6 </tspan><tspan fill="#E2E8F0">  if (failCount &lt;= 2) {</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="390"><tspan><tspan fill="#475569"> 7 </tspan><tspan fill="#E2E8F0">    return res.status(503).json({</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="412"><tspan><tspan fill="#475569"> 8 </tspan><tspan fill="#E2E8F0">      code: 503,</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="434"><tspan><tspan fill="#475569"> 9 </tspan><tspan fill="#E2E8F0">      message: `[503 维护中] 第 ${failCount} 次重试`</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="456"><tspan><tspan fill="#475569">10 </tspan><tspan fill="#E2E8F0">    });</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="478"><tspan><tspan fill="#475569">11 </tspan><tspan fill="#E2E8F0">  }</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="500"><tspan><tspan fill="#475569">12 </tspan><tspan fill="#E2E8F0">  failCount = 0; // 重置计数</tspan></tspan>
+    </text></g>
+
+  
+  <g id="code-box-right" data-pptx-bounds="660 190 560 375">
+    <rect x="660" y="194" width="560" height="371" rx="12" fill="#060911" />
+    <rect x="660" y="190" width="560" height="371" rx="12" fill="#0F172A" stroke="#10B981" stroke-width="1.5" />
+    
+    <rect x="660" y="190" width="560" height="36" rx="12" fill="#1E293B" />
+    <circle cx="680" cy="208" r="5" fill="#EF4444" />
+    <circle cx="695" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="710" cy="208" r="5" fill="#10B981" />
+    <text x="940.0" y="213" font-size="13" font-weight="bold" fill="#CBD5E1" text-anchor="middle">前端控制台抓包链路日志输出 (Pinia Logger)</text>
+    
+    <text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="258">
+      <tspan><tspan fill="#475569"> 1 </tspan><tspan fill="#E2E8F0">[Request] GET /api/test/retry-simulation -&gt; 发出</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="280"><tspan><tspan fill="#475569"> 2 </tspan><tspan fill="#E2E8F0">[Response Error] HTTP 503 Service Unavailable</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="302"><tspan><tspan fill="#475569"> 3 </tspan><tspan fill="#E2E8F0">[Retry Manager] 触发第 1 次重试，等待 1000ms...</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="324"><tspan><tspan fill="#475569"> 4 </tspan><tspan fill="#E2E8F0">[Retry Manager] 触发第 2 次重试，等待 2000ms...</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="346"><tspan><tspan fill="#475569"> 5 </tspan><tspan fill="#E2E8F0">[Response Success] HTTP 200 OK -&gt; 业务数据交付完成！</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="368"><tspan><tspan fill="#475569"> 6 </tspan><tspan fill="#E2E8F0" /></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="390"><tspan><tspan fill="#475569"> 7 </tspan><tspan fill="#E2E8F0">页面未弹出报错弹窗，全过程自动自愈！</tspan></tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#38BDF8" />
+    <text fill="#38BDF8" font-weight="bold" font-size="14" x="95" y="618">
+      <tspan>💡 架构核心解析：【全栈闭环】配套的 Node.js 后端完整模拟了真实高并发容错场景，为教学实训提供真实验证抓手。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">24 / 30</text>
+  </g>
+
+</svg>

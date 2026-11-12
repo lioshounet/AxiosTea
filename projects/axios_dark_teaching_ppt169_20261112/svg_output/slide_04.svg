@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">总体架构设计</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">TS + Axios 工业级分层解耦网络层体系全景拓扑</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">职责单一、高内聚低耦合的四层分层模型架构</text>
+  </g>
+
+  <!-- Layer 1 Strip -->
+  <g id="layer-row-01" data-pptx-bounds="60 190 1160 84">
+    <rect x="60" y="194" width="1160" height="80" rx="12" fill="#060911" />
+    <rect x="60" y="190" width="1160" height="80" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="76" y="206" width="330" height="48" rx="8" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <rect x="76" y="206" width="8" height="48" rx="4" fill="#38BDF8" />
+    <text x="96" y="236" font-size="17" font-weight="bold" fill="#38BDF8">1. 业务应用层 (API Services)</text>
+    <text x="430" y="236" font-size="14" fill="#CBD5E1">auth.ts / user.ts / test.ts / file.ts —— 面向视图组件提供精准强类型的函数调用契约</text>
+  </g>
+  <!-- Layer 2 Strip -->
+  <g id="layer-row-02" data-pptx-bounds="60 284 1160 84">
+    <rect x="60" y="288" width="1160" height="80" rx="12" fill="#060911" />
+    <rect x="60" y="284" width="1160" height="80" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="76" y="300" width="330" height="48" rx="8" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <rect x="76" y="300" width="8" height="48" rx="4" fill="#10B981" />
+    <text x="96" y="330" font-size="17" font-weight="bold" fill="#10B981">2. 封装核心层 (Request Core)</text>
+    <text x="430" y="330" font-size="14" fill="#CBD5E1">request.ts —— 实例配置、主 service 与轻量 refreshService 隔离、串联双向拦截器流水线</text>
+  </g>
+  <!-- Layer 3 Strip -->
+  <g id="layer-row-03" data-pptx-bounds="60 378 1160 84">
+    <rect x="60" y="382" width="1160" height="80" rx="12" fill="#060911" />
+    <rect x="60" y="378" width="1160" height="80" rx="12" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="76" y="394" width="330" height="48" rx="8" fill="#0B0F19" stroke="#F59E0B" stroke-width="1" />
+    <rect x="76" y="394" width="8" height="48" rx="4" fill="#F59E0B" />
+    <text x="96" y="424" font-size="17" font-weight="bold" fill="#F59E0B">3. 通用工具层 (Modular Utilities)</text>
+    <text x="430" y="414" font-size="13" fill="#CBD5E1">
+      <tspan x="430" dy="0">cancel.ts (AbortController) · loading.ts (计数器) · retry.ts (重试) · download.ts (流反解) ·</tspan>
+      <tspan x="430" dy="20">token.ts</tspan>
+    </text>
+  </g>
+  <!-- Layer 4 Strip -->
+  <g id="layer-row-04" data-pptx-bounds="60 472 1160 84">
+    <rect x="60" y="476" width="1160" height="80" rx="12" fill="#060911" />
+    <rect x="60" y="472" width="1160" height="80" rx="12" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="76" y="488" width="330" height="48" rx="8" fill="#0B0F19" stroke="#EF4444" stroke-width="1" />
+    <rect x="76" y="488" width="8" height="48" rx="4" fill="#EF4444" />
+    <text x="96" y="518" font-size="17" font-weight="bold" fill="#EF4444">4. 支撑服务层 (Mock &amp; Backend)</text>
+    <text x="430" y="518" font-size="14" fill="#CBD5E1">Node.js Express 对应后端 + Pinia Logger 实时拦截器执行链路控制台</text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#38BDF8" />
+    <text x="95" y="618" font-size="14" font-weight="bold" fill="#38BDF8">
+      <tspan x="95" dy="0">💡 架构核心解析：【架构原则】各模块职责独立，工具层无视图强依赖，核心层通过拦截器聚合全局能力。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">04 / 30</text>
+  </g>
+
+</svg>

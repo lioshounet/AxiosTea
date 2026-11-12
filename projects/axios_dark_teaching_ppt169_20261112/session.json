@@ -1,0 +1,22 @@
+{
+  "phase": "strategist",
+  "status": "ready_user",
+  "current_stage": "stage1",
+  "expected_stage": "stage1",
+  "expected_stage_number": 1,
+  "recommendation_stage": "stage1",
+  "recommendation_stage_number": 1,
+  "recommendation_file": "recommendations.stage1.json",
+  "recommendation_version": "b0866dfe8e37aa64111b44e3b3193f0577211cf7499560506e3555a0a1a156ef",
+  "recommendation_error": null,
+  "result_stage": null,
+  "result_stage_number": 0,
+  "result_version": null,
+  "server_port": null,
+  "event": "derived",
+  "template_selection_version": null,
+  "template_install_version": null,
+  "template_status": "ready_user",
+  "template_error": null,
+  "updated_at": "2026-11-12T14:51:37"
+}

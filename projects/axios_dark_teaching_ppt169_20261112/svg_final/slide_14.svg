@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#38BDF8" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">核心要点三 · 防重提交</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">核心要点三：重复请求的成因、危害与防御体系</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">手抖快速连击、路由快速切换残留与后端数据脏写的终极克星</text>
+  </g>
+
+  
+  <g id="quad-card-01" data-pptx-bounds="60 190 560 180">
+    <rect x="60" y="194" width="560" height="176" rx="12" fill="#060911" />
+    <rect x="60" y="190" width="560" height="176" rx="12" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="80" y="206" width="28" height="28" rx="6" fill="#0B0F19" stroke="#EF4444" stroke-width="1" />
+    <text x="94" y="226" font-size="14" font-weight="bold" fill="#EF4444" text-anchor="middle">01</text>
+    <text x="118" y="227" font-size="18" font-weight="bold" fill="#EF4444">危害 1：按钮连击重复入库</text>
+    <text fill="#CBD5E1" font-size="14" x="84" y="265">
+      <tspan>用户表单提交或下单时手抖狂点，前序请求未结即发出新请求，</tspan></text><text fill="#CBD5E1" font-size="14" x="84" y="287"><tspan>引发数据库并发脏写入。</tspan>
+    </text></g>
+  
+  <g id="quad-card-02" data-pptx-bounds="660 190 560 180">
+    <rect x="660" y="194" width="560" height="176" rx="12" fill="#060911" />
+    <rect x="660" y="190" width="560" height="176" rx="12" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="680" y="206" width="28" height="28" rx="6" fill="#0B0F19" stroke="#F59E0B" stroke-width="1" />
+    <text x="694" y="226" font-size="14" font-weight="bold" fill="#F59E0B" text-anchor="middle">02</text>
+    <text x="718" y="227" font-size="18" font-weight="bold" fill="#F59E0B">危害 2：SPA 路由切换幽灵响应</text>
+    <text fill="#CBD5E1" font-size="14" x="684" y="265">
+      <tspan>用户快速切换导航菜单，旧页面的耗时查询延迟返回后错误覆盖新页面数据</tspan></text><text fill="#CBD5E1" font-size="14" x="684" y="287"><tspan>（竞态覆盖）。</tspan>
+    </text></g>
+  
+  <g id="quad-card-03" data-pptx-bounds="60 385 560 180">
+    <rect x="60" y="389" width="560" height="176" rx="12" fill="#060911" />
+    <rect x="60" y="385" width="560" height="176" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="80" y="401" width="28" height="28" rx="6" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="94" y="421" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">03</text>
+    <text x="118" y="422" font-size="18" font-weight="bold" fill="#38BDF8">危害 3：弱网重复消耗宽带</text>
+    <text fill="#CBD5E1" font-size="14" x="84" y="460">
+      <tspan>移动端网络波动时未决连接持续占用浏览器 6 个并发连接通道，</tspan></text><text fill="#CBD5E1" font-size="14" x="84" y="482"><tspan>导致高优先级接口阻塞。</tspan>
+    </text></g>
+  
+  <g id="quad-card-04" data-pptx-bounds="660 385 560 180">
+    <rect x="660" y="389" width="560" height="176" rx="12" fill="#060911" />
+    <rect x="660" y="385" width="560" height="176" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="680" y="401" width="28" height="28" rx="6" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <text x="694" y="421" font-size="14" font-weight="bold" fill="#10B981" text-anchor="middle">04</text>
+    <text x="718" y="422" font-size="18" font-weight="bold" fill="#10B981">解法：AbortController 切面防重</text>
+    <text fill="#CBD5E1" font-size="14" x="684" y="460">
+      <tspan>以请求唯一指纹哈希为键，全局 Map 集中管理 Signal 信号量，</tspan></text><text fill="#CBD5E1" font-size="14" x="684" y="482"><tspan>自动撤销前序 Pending 请求。</tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#38BDF8" />
+    <text fill="#38BDF8" font-weight="bold" font-size="14" x="95" y="618">
+      <tspan>💡 架构核心解析：【防重哲学】前端网络层主动掐断冗余请求，不仅保护了用户体验，更极大减轻了服务端计算压力。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#38BDF8" text-anchor="end">14 / 30</text>
+  </g>
+
+</svg>
