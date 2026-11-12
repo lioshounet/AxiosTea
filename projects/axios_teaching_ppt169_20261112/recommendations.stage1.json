@@ -1,0 +1,37 @@
+{
+  "stage": "stage1",
+  "lang": "zh",
+  "primary_language": "zh-CN",
+  "recommend": {
+    "canvas": "ppt169"
+  },
+  "audience": {
+    "value": "Vue.js 前端开发者、中高级全栈学员、大厂面试备战者及高校师生"
+  },
+  "communication_intent": {
+    "value": "系统化拆解 Axios 企业级封装的六大核心要点，从原生痛点出发建立工业级架构认知，讲透双Token刷新、防重复取消、Blob异常解析等硬核技术机理"
+  },
+  "audience_outcome": {
+    "value": "彻底掌握 Axios 拦截器设计思想、TypeScript 声明合并与泛型推导、双 Token 队列并发重放模型以及高健壮性的文件流与异常重试体系"
+  },
+  "core_message": {
+    "value": "企业级网络层封装：以统一解包为基石、以双Token无感刷新与AbortController防重复为核心、以全链路TS类型安全与Blob异常容错为保障"
+  },
+  "delivery_context": {
+    "value": "技术讲座 / 课程教学 / 架构实训，时长约 30-45 分钟，配套全套前后端源码与可视化控制台"
+  },
+  "artifact_afterlife": {
+    "value": "作为团队标准网络层技术规范、全栈教学讲义及大厂前端面试通关指南"
+  },
+  "content_divergence": {
+    "value": ""
+  },
+  "template_options": {
+    "schema_version": 1,
+    "phase": "template",
+    "lang": "zh",
+    "explicit_workspace_roots": [],
+    "default_mode": "free_design"
+  }
+}
+

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="ending" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 400,0 C 350,180 480,260 380,440 C 300,580 420,680 320,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 140">
+    <rect x="60" y="42" width="240" height="30" rx="15" fill="#8F2D56" />
+    <text x="180" y="62" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">课程总结与面试通关</text>
+    <text x="60" y="118" font-size="44" font-weight="bold" fill="#0F172A">企业级网络层封装方法论总结与大厂高频面试答辩梳理</text>
+    <text x="60" y="158" font-size="20" fill="#6C757D">四大核心支柱通关复盘 · 祝大家技术精进，面试通关！</text>
+  </g>
+
+  
+  <g id="ending-pillar-01" data-pptx-bounds="60 190 275 300">
+    <rect x="60" y="194" width="275" height="296" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="275" height="296" rx="14" fill="#FFFFFF" stroke="#8F2D56" stroke-width="1.5" />
+    <rect x="76" y="210" width="32" height="32" rx="8" fill="#8F2D56" />
+    <text x="92" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="116" y="232" font-size="15" font-weight="bold" fill="#8F2D56">1. 统一解包与类型安全</text>
+    <line x1="76" y1="258" x2="319" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="78" y="295">
+      <tspan>响应拦截器剥离业务外壳，</tspan></text><text fill="#2B2D42" font-size="14" x="78" y="317">TypeScript 声明合并与泛型推导打</text><text fill="#2B2D42" font-size="14" x="78" y="339"><tspan>造端到端类型守卫。</tspan>
+    </text></g>
+  
+  <g id="ending-pillar-02" data-pptx-bounds="355 190 275 300">
+    <rect x="355" y="194" width="275" height="296" rx="14" fill="#E2DDD5" />
+    <rect x="355" y="190" width="275" height="296" rx="14" fill="#FFFFFF" stroke="#D81159" stroke-width="1.5" />
+    <rect x="371" y="210" width="32" height="32" rx="8" fill="#D81159" />
+    <text x="387" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text x="411" y="232" font-size="15" font-weight="bold" fill="#D81159">2. 双Token并发无感刷新</text>
+    <line x1="371" y1="258" x2="614" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="373" y="295">
+      <tspan>短长凭证分离降低泄露风险，</tspan></text><text fill="#2B2D42" font-size="14" x="373" y="317">全局锁 + retryQueue 解决并发</text><text fill="#2B2D42" font-size="14" x="373" y="339"><tspan>401 刷新死锁。</tspan>
+    </text></g>
+  
+  <g id="ending-pillar-03" data-pptx-bounds="650 190 275 300">
+    <rect x="650" y="194" width="275" height="296" rx="14" fill="#E2DDD5" />
+    <rect x="650" y="190" width="275" height="296" rx="14" fill="#FFFFFF" stroke="#218380" stroke-width="1.5" />
+    <rect x="666" y="210" width="32" height="32" rx="8" fill="#218380" />
+    <text x="682" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text fill="#218380" font-weight="bold" font-size="13" x="706" y="222">
+      <tspan>3. AbortController 防重</tspan>
+      </text><text fill="#218380" font-weight="bold" font-size="13" x="706" y="240"><tspan>连击</tspan>
+    </text><line x1="666" y1="258" x2="909" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="668" y="295">
+      <tspan>基于四维指纹精准识别重复请求，</tspan></text><text fill="#2B2D42" font-size="14" x="668" y="317">自动取消前序 pending，路由跳转</text><text fill="#2B2D42" font-size="14" x="668" y="339"><tspan>安全清空。</tspan>
+    </text></g>
+  
+  <g id="ending-pillar-04" data-pptx-bounds="945 190 275 300">
+    <rect x="945" y="194" width="275" height="296" rx="14" fill="#E2DDD5" />
+    <rect x="945" y="190" width="275" height="296" rx="14" fill="#FFFFFF" stroke="#FFBC42" stroke-width="1.5" />
+    <rect x="961" y="210" width="32" height="32" rx="8" fill="#FFBC42" />
+    <text x="977" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">04</text>
+    <text x="1001" y="232" font-size="15" font-weight="bold" fill="#FFBC42">4. 健壮容灾与 Blob 避坑</text>
+    <line x1="961" y1="258" x2="1204" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="963" y="295">
+      <tspan>计数器模型实现零闪烁 Loading，</tspan></text><text fill="#2B2D42" font-size="14" x="963" y="317">自动退避重试网络抖动，Blob.text</text><text fill="#2B2D42" font-size="14" x="963" y="339"><tspan>() 反解错误 JSON。</tspan>
+    </text></g>
+
+
+  
+  <g id="ending-banner" data-pptx-bounds="60 515 1160 140">
+    <rect x="60" y="519" width="1160" height="136" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="515" width="1160" height="136" rx="14" fill="#F1EFE8" stroke="#8F2D56" stroke-width="1.5" />
+    <text x="90" y="555" font-size="20" font-weight="bold" fill="#8F2D56">🎓 课后实操建议与答疑互动 (Q&amp;A)</text>
+    <text fill="#2B2D42" font-size="15" x="90" y="590">
+      <tspan>1. 克隆代码仓库并在本地运行 npm run dev 与 node server/index.js 进行抓包复现验证；</tspan>
+      </text><text fill="#2B2D42" font-size="15" x="90" y="615"><tspan>2. 动手为请求库扩展自定义加密拦截器或离线请求持久化缓存功能，巩固切面编程思维！</tspan>
+    </text><text x="90" y="635" font-size="14" font-family="'Microsoft YaHei', Consolas, monospace" font-weight="bold" fill="#6C757D">GitHub Repository: https://github.com/teaching-demo/axios-enterprise-ts</text>
+  </g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 675 1160 30" font-size="14">
+    <text x="60" y="692" fill="#6C757D">感谢大家的聆听！祝愿各位同学在技术架构之路上越走越稳！</text>
+    <text x="1220" y="692" font-weight="bold" fill="#8F2D56" text-anchor="end">30 / 30</text>
+  </g>
+</svg>

@@ -1,0 +1,166 @@
+{
+  "stage": "stage2",
+  "lang": "zh",
+  "selection_sha256": "e8387620e957096be97f4051df1e9f5c90c6976dd6cf7c547f228e7c831c4c36",
+  "recommend": {
+    "delivery_purpose": "balanced",
+    "mode": "custom",
+    "visual_style": "custom",
+    "image_strategy": "custom",
+    "image_usage": ["provided", "placeholder"],
+    "generation_mode": "continuous"
+  },
+  "page_count": {
+    "value": "14-16"
+  },
+  "image_notes": {
+    "value": "以清晰的代码架构图、时序状态流转图与技术拓扑为主，避免杂乱具象装饰图。"
+  },
+  "proactive_speaker_notes": {
+    "value": true
+  },
+  "proactive_custom_animations": {
+    "value": false
+  },
+  "proactive_narration_audio": {
+    "value": false
+  },
+  "refine_spec": {
+    "value": false
+  },
+  "design_spec_depth": {
+    "value": "complete"
+  },
+  "design_directions": {
+    "selected": 0,
+    "candidates": [
+      {
+        "id": "editorial-engineering",
+        "name": "现代极简工程画册 (Editorial Blueprint)",
+        "note": "以现代瑞士极简排版为基底，融合工程蓝图的精准线框与高质感留白，适合深度技术精讲。",
+        "mode": "custom",
+        "mode_behavior": "以 instructional 教学递进模式为核心骨架，遵循『原生缺陷痛点 -> 封装架构设计 -> 核心机理剖析 -> 避坑落地实战』的逻辑主线，层层推导演练。",
+        "visual_style": "custom",
+        "visual_style_behavior": "由 swiss-minimal 提供精确栅格与呼吸感大留白，editorial 提供分栏对比与证据注解，blueprint 提供清晰的流程线框与参数标注；强调技术层级与代码阅读体验。",
+        "icons": "tabler-outline",
+        "color": {
+          "name": "理性极客蓝",
+          "palette": {
+            "background": "#FFFFFF",
+            "secondary_bg": "#F8FAFC",
+            "primary": "#0F172A",
+            "accent": "#0284C7",
+            "secondary_accent": "#10B981",
+            "body_text": "#334155"
+          }
+        },
+        "typography": {
+          "name": "微软雅黑 + Consolas / JetBrains Mono",
+          "heading": {
+            "primary": "Microsoft YaHei",
+            "english": "Segoe UI",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Consolas",
+            "css": "monospace"
+          },
+          "body_size": 20
+        },
+        "image_strategy": {
+          "name": "工程架构与时序图谱",
+          "rendering": "custom",
+          "visual": "结构化扁平矢量框图、技术时序泳道图与模块关系拓扑",
+          "mood": "严谨、清晰、工业级、可信赖",
+          "behavior": "以 vector-illustration 负责整洁轮廓，blueprint 负责逻辑连线与状态标注，严格服从当前配色角色。"
+        }
+      },
+      {
+        "id": "dark-tech-cockpit",
+        "name": "极客深色控制台 (Dark Tech Console)",
+        "note": "以深色控制台仪表盘为基调，搭配高对比度语法高亮与光晕强调，极具现代全栈技术质感。",
+        "mode": "custom",
+        "mode_behavior": "以 instructional 与 showcase 混合推进，强化动态抓包控制台与拦截器链条的实时交互感知。",
+        "visual_style": "custom",
+        "visual_style_behavior": "由 dark-tech 主导深色底色 (#0F172A)，配合柔和半透明悬浮卡片 (glassmorphism) 与发光状态药丸，突出代码和请求生命周期。",
+        "icons": "tabler-outline",
+        "color": {
+          "name": "深空终端",
+          "palette": {
+            "background": "#0F172A",
+            "secondary_bg": "#1E293B",
+            "primary": "#38BDF8",
+            "accent": "#F59E0B",
+            "secondary_accent": "#34D399",
+            "body_text": "#E2E8F0"
+          }
+        },
+        "typography": {
+          "name": "微软雅黑 + Fira Code",
+          "heading": {
+            "primary": "Microsoft YaHei",
+            "english": "Arial",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Fira Code",
+            "css": "monospace"
+          },
+          "body_size": 20
+        },
+        "image_strategy": {
+          "name": "终端数据流仪表",
+          "rendering": "custom",
+          "visual": "深色科技仪表盘、网络数据流转监控图",
+          "mood": "沉浸、敏锐、前沿开发体验",
+          "behavior": "由 digital-dashboard 负责数据流拓扑，以亮色点缀引导视线焦点。"
+        }
+      },
+      {
+        "id": "academic-clean",
+        "name": "明晰教研学术 (Academic Precision)",
+        "note": "经典学院教学风范，强调版面阅读舒适度与重点突出，兼顾长久复习与大厂面试突击。",
+        "mode": "custom",
+        "mode_behavior": "严格的金字塔结构 (pyramid) 结合概念拆解 (instructional)，每页先给出核心架构结论，再展开设计原则与踩坑对比。",
+        "visual_style": "custom",
+        "visual_style_behavior": "由 soft-rounded 负责温和易读的卡片圆角，swiss-minimal 保证清晰的行列对比，强调大号关键数字与总结表格。",
+        "icons": "tabler-outline",
+        "color": {
+          "name": "经典学院",
+          "palette": {
+            "background": "#FAFAFA",
+            "secondary_bg": "#EEF2F6",
+            "primary": "#1E3A8A",
+            "accent": "#D97706",
+            "secondary_accent": "#2563EB",
+            "body_text": "#1F2937"
+          }
+        },
+        "typography": {
+          "name": "微软雅黑 + Segoe UI",
+          "heading": {
+            "primary": "Microsoft YaHei",
+            "english": "Segoe UI",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Segoe UI",
+            "css": "sans-serif"
+          },
+          "body_size": 20
+        },
+        "image_strategy": {
+          "name": "教材级清晰图表",
+          "rendering": "custom",
+          "visual": "清晰的双栏对比图、架构树与决策表",
+          "mood": "权威、易懂、条理分明",
+          "behavior": "由 minimalist-swiss 规范布局，注重文字可读性与留白呼吸感。"
+        }
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点三 · 取消机制</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">核心要点三：从废弃的 CancelToken 到现代 AbortController</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">拥抱现代 Web 标准 API 的技术演进</text>
+  </g>
+
+  
+  <g id="card-01" data-pptx-bounds="60 190 360 375">
+    <rect x="60" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#6C757D" stroke-width="1.5" />
+    <rect x="80" y="210" width="32" height="32" rx="8" fill="#6C757D" />
+    <text x="96" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text fill="#6C757D" font-weight="bold" font-size="15" x="120" y="222">
+      <tspan>历史方案：CancelToken (已</tspan>
+      </text><text fill="#6C757D" font-weight="bold" font-size="15" x="120" y="241"><tspan>废弃)</tspan>
+    </text><line x1="80" y1="258" x2="400" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="84" y="290">
+      <tspan>Axios 自 v0.22.0 起正式弃用 CancelToken。</tspan></text><text fill="#2B2D42" font-size="14" x="84" y="312">旧方案基于内部闭包机制，侵入性强，</text><text fill="#2B2D42" font-size="14" x="84" y="334">不符合标准规范，无法与 Fetch 或 Node 原生</text><text fill="#2B2D42" font-size="14" x="84" y="356"><tspan>API 互通。</tspan>
+    </text></g>
+  
+  <g id="card-02" data-pptx-bounds="460 190 360 375">
+    <rect x="460" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="460" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#218380" stroke-width="1.5" />
+    <rect x="480" y="210" width="32" height="32" rx="8" fill="#218380" />
+    <text x="496" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text x="520" y="232" font-size="18" font-weight="bold" fill="#218380">现代标准：AbortController</text>
+    <line x1="480" y1="258" x2="800" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="484" y="290">
+      <tspan>W3C 标准 Web API，浏览器与 Node.js 现代环</tspan></text><text fill="#2B2D42" font-size="14" x="484" y="312">境全面原生内置。通过 controller.signal 信</text><text fill="#2B2D42" font-size="14" x="484" y="334"><tspan>号量与请求解耦，支持跨框架与流式通信。</tspan>
+    </text></g>
+  
+  <g id="card-03" data-pptx-bounds="860 190 360 375">
+    <rect x="860" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="860" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#8F2D56" stroke-width="1.5" />
+    <rect x="880" y="210" width="32" height="32" rx="8" fill="#8F2D56" />
+    <text x="896" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text x="920" y="232" font-size="18" font-weight="bold" fill="#8F2D56">封装收益</text>
+    <line x1="880" y1="258" x2="1200" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="884" y="290">
+      <tspan>通过标准 AbortController 管理未完成请求，</tspan></text><text fill="#2B2D42" font-size="14" x="884" y="312">可轻松实现防重复连击、路由页面销毁批量取</text><text fill="#2B2D42" font-size="14" x="884" y="334"><tspan>消及手动中断。</tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#8F2D56" font-weight="bold" font-size="15" x="90" y="618">
+      <tspan>【面试加分项】面试官如果问取消请求，主动提出 CancelToken 的废弃原因与 AbortController 的标准规范优势。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">13 / 30</text>
+  </g>
+
+</svg>

@@ -1,0 +1,63 @@
+{
+  "primary_language": "zh-CN",
+  "canvas": "ppt169",
+  "audience": "Vue.js 前端开发者、中高级全栈学员、大厂面试备战者及高校师生",
+  "communication_intent": "系统化拆解 Axios 企业级封装的六大核心要点，从原生痛点出发建立工业级架构认知，讲透双Token刷新、防重复取消、Blob异常解析等硬核技术机理",
+  "audience_outcome": "彻底掌握 Axios 拦截器设计思想、TypeScript 声明合并与泛型推导、双 Token 队列并发重放模型以及高健壮性的文件流与异常重试体系",
+  "core_message": "企业级网络层封装：以统一解包为基石、以双Token无感刷新与AbortController防重复为核心、以全链路TS类型安全与Blob异常容错为保障",
+  "delivery_context": "技术讲座 / 课程教学 / 架构实训，时长约 30-45 分钟，配套全套前后端源码与可视化控制台",
+  "artifact_afterlife": "作为团队标准网络层技术规范、全栈教学讲义及大厂前端面试通关指南",
+  "content_divergence": "",
+  "delivery_purpose": "presentation",
+  "page_count": "30",
+  "mode": "custom",
+  "mode_behavior": "以 instructional 与 showcase 混合推进，强化动态抓包控制台与拦截器链条的实时交互感知。",
+  "visual_style": "paper-cut",
+  "color": {
+    "name": "custom",
+    "custom": "使用配色[\"#ffbc42\",\"#d81159\",\"#8f2d56\",\"#218380\",\"#73d2de\"]，和相近的颜色",
+    "palette": {}
+  },
+  "icons": "tabler-outline",
+  "typography": {
+    "name": "微软雅黑 + Fira Code",
+    "heading": {
+      "css": "sans-serif",
+      "english": "Arial",
+      "primary": "Microsoft YaHei",
+      "sample_primary": "",
+      "sample_english": ""
+    },
+    "body": {
+      "css": "monospace",
+      "english": "Fira Code",
+      "primary": "Microsoft YaHei",
+      "sample_primary": "",
+      "sample_english": ""
+    },
+    "body_size": 32,
+    "sizes": {
+      "title": 56,
+      "subtitle": 44,
+      "annotation": 24
+    },
+    "note": "",
+    "body_size_unit": "px"
+  },
+  "image_usage": [
+    "provided",
+    "placeholder"
+  ],
+  "image_notes": "以清晰的代码架构图、时序状态流转图与技术拓扑为主，避免杂乱具象装饰图。",
+  "proactive_speaker_notes": true,
+  "proactive_custom_animations": false,
+  "proactive_narration_audio": false,
+  "generation_mode": "continuous",
+  "refine_spec": false,
+  "design_spec_depth": "complete",
+  "stage": "final",
+  "status": "confirmed",
+  "stage1_sha256": "a2b17faf25dc49661a7f2bbc8761c26c9e8107ad8264bbe4fc205e6c1e0e665d",
+  "selection_sha256": "e8387620e957096be97f4051df1e9f5c90c6976dd6cf7c547f228e7c831c4c36",
+  "confirmed_at": "2026-11-12T11:54:44"
+}

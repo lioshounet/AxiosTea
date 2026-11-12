@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">TypeScript 架构</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">泛型推导函数封装：request&lt;T&gt;() 打造端到端类型安全</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">剥除外壳，让函数返回值直接对齐业务实体数据契约</text>
+  </g>
+
+  <!-- Code Card code-box-left -->
+  <g id="code-box-left" data-pptx-bounds="60 190 560 375">
+    <rect x="60" y="194" width="560" height="371" rx="12" fill="#E2DDD5" />
+    <rect x="60" y="190" width="560" height="371" rx="12" fill="#2B2D42" stroke="#8F2D56" stroke-width="1.5" />
+    <!-- Window Bar -->
+    <rect x="60" y="190" width="560" height="36" rx="12" fill="#1E1E2E" />
+    <circle cx="80" cy="208" r="5" fill="#EF4444" />
+    <circle cx="95" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="110" cy="208" r="5" fill="#10B981" />
+    <text x="340.0" y="213" font-size="13" font-weight="bold" fill="#CBD5E1" text-anchor="middle">通用泛型请求包装函数</text>
+    <!-- Code Area -->
+    <text x="80" y="258" font-size="13" font-family="'Microsoft YaHei', Consolas, monospace">
+      <tspan x="80" dy="0"><tspan fill="#6C757D"> 1 </tspan><tspan fill="#E2E8F0">// utils/request.ts</tspan></tspan><tspan x="80" dy="22"><tspan fill="#6C757D"> 2 </tspan><tspan fill="#E2E8F0">export function request&lt;T = any&gt;(</tspan></tspan><tspan x="80" dy="22"><tspan fill="#6C757D"> 3 </tspan><tspan fill="#E2E8F0">  config: AxiosRequestConfig</tspan></tspan><tspan x="80" dy="22"><tspan fill="#6C757D"> 4 </tspan><tspan fill="#E2E8F0">): Promise&lt;T&gt; {</tspan></tspan><tspan x="80" dy="22"><tspan fill="#6C757D"> 5 </tspan><tspan fill="#E2E8F0">  // 响应拦截器已解包，返回的就是最终 T 类型</tspan></tspan><tspan x="80" dy="22"><tspan fill="#6C757D"> 6 </tspan><tspan fill="#E2E8F0">  return service(config) as unknown as Promise&lt;T&gt;;</tspan></tspan><tspan x="80" dy="22"><tspan fill="#6C757D"> 7 </tspan><tspan fill="#E2E8F0">}</tspan></tspan>
+    </text>
+  </g>
+
+  <!-- Code Card code-box-right -->
+  <g id="code-box-right" data-pptx-bounds="660 190 560 375">
+    <rect x="660" y="194" width="560" height="371" rx="12" fill="#E2DDD5" />
+    <rect x="660" y="190" width="560" height="371" rx="12" fill="#2B2D42" stroke="#218380" stroke-width="1.5" />
+    <!-- Window Bar -->
+    <rect x="660" y="190" width="560" height="36" rx="12" fill="#1E1E2E" />
+    <circle cx="680" cy="208" r="5" fill="#EF4444" />
+    <circle cx="695" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="710" cy="208" r="5" fill="#10B981" />
+    <text x="940.0" y="213" font-size="13" font-weight="bold" fill="#CBD5E1" text-anchor="middle">业务 API 消费端直接获得智能提示</text>
+    <!-- Code Area -->
+    <text x="680" y="258" font-size="13" font-family="'Microsoft YaHei', Consolas, monospace">
+      <tspan x="680" dy="0"><tspan fill="#6C757D"> 1 </tspan><tspan fill="#E2E8F0">// api/user.ts 声明返回 UserInfo</tspan></tspan><tspan x="680" dy="22"><tspan fill="#6C757D"> 2 </tspan><tspan fill="#E2E8F0">export function getUserProfileApi() {</tspan></tspan><tspan x="680" dy="22"><tspan fill="#6C757D"> 3 </tspan><tspan fill="#E2E8F0">  return request&lt;UserInfo&gt;({</tspan></tspan><tspan x="680" dy="22"><tspan fill="#6C757D"> 4 </tspan><tspan fill="#E2E8F0">    url: '/api/user/profile',</tspan></tspan><tspan x="680" dy="22"><tspan fill="#6C757D"> 5 </tspan><tspan fill="#E2E8F0">    method: 'GET'</tspan></tspan><tspan x="680" dy="22"><tspan fill="#6C757D"> 6 </tspan><tspan fill="#E2E8F0">  });</tspan></tspan><tspan x="680" dy="22"><tspan fill="#6C757D"> 7 </tspan><tspan fill="#E2E8F0">}</tspan></tspan><tspan x="680" dy="22"><tspan fill="#6C757D"> 8 </tspan><tspan fill="#E2E8F0">// 组件消费：user.username / user.role 完整提示！</tspan></tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text x="90" y="618" font-size="15" font-weight="bold" fill="#8F2D56">
+      <tspan x="90" dy="0">【收益】消除了前端所有的手动类型断言，后端接口字段修改时，TS 编译期立刻报错感知。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">27 / 30</text>
+  </g>
+
+</svg>

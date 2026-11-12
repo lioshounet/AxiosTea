@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">配套实训平台</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">Pinia 状态机驱动的可视化执行控制台：直观透视拦截器链路</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">把抽象晦涩的拦截器与并发队列在界面上实时透明化</text>
+  </g>
+
+  
+  <g id="quad-card-01" data-pptx-bounds="60 190 560 180">
+    <rect x="60" y="194" width="560" height="176" rx="12" fill="#E2DDD5" />
+    <rect x="60" y="190" width="560" height="176" rx="12" fill="#FFFFFF" stroke="#8F2D56" stroke-width="1.5" />
+    <rect x="80" y="206" width="28" height="28" rx="6" fill="#8F2D56" />
+    <text x="94" y="226" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="118" y="227" font-size="18" font-weight="bold" fill="#8F2D56">全局日志钩子解耦</text>
+    <text fill="#2B2D42" font-size="14" x="84" y="265">
+      <tspan>通过 window.__ADD_AXIOS_LOG__ 跨模块投递，网络层与视图状态库零</tspan></text><text fill="#2B2D42" font-size="14" x="84" y="287"><tspan>耦合。</tspan>
+    </text></g>
+  
+  <g id="quad-card-02" data-pptx-bounds="660 190 560 180">
+    <rect x="660" y="194" width="560" height="176" rx="12" fill="#E2DDD5" />
+    <rect x="660" y="190" width="560" height="176" rx="12" fill="#FFFFFF" stroke="#218380" stroke-width="1.5" />
+    <rect x="680" y="206" width="28" height="28" rx="6" fill="#218380" />
+    <text x="694" y="226" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text x="718" y="227" font-size="18" font-weight="bold" fill="#218380">实时活跃请求监视</text>
+    <text fill="#2B2D42" font-size="14" x="684" y="265">
+      <tspan>动态展示当前处于 Pending 状态的请求计数，实时捕获手抖连击中的取消</tspan></text><text fill="#2B2D42" font-size="14" x="684" y="287"><tspan>事件。</tspan>
+    </text></g>
+  
+  <g id="quad-card-03" data-pptx-bounds="60 385 560 180">
+    <rect x="60" y="389" width="560" height="176" rx="12" fill="#E2DDD5" />
+    <rect x="60" y="385" width="560" height="176" rx="12" fill="#FFFFFF" stroke="#FFBC42" stroke-width="1.5" />
+    <rect x="80" y="401" width="28" height="28" rx="6" fill="#FFBC42" />
+    <text x="94" y="421" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text x="118" y="422" font-size="18" font-weight="bold" fill="#FFBC42">Token 倒计时沙盒</text>
+    <text fill="#2B2D42" font-size="14" x="84" y="460">
+      <tspan>右上角动态展现 15 秒短期凭证倒计时，倒计时归零后点击即刻触发静默刷</tspan></text><text fill="#2B2D42" font-size="14" x="84" y="482"><tspan>新。</tspan>
+    </text></g>
+  
+  <g id="quad-card-04" data-pptx-bounds="660 385 560 180">
+    <rect x="660" y="389" width="560" height="176" rx="12" fill="#E2DDD5" />
+    <rect x="660" y="385" width="560" height="176" rx="12" fill="#FFFFFF" stroke="#D81159" stroke-width="1.5" />
+    <rect x="680" y="401" width="28" height="28" rx="6" fill="#D81159" />
+    <text x="694" y="421" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">04</text>
+    <text x="718" y="422" font-size="18" font-weight="bold" fill="#D81159">链路全景逐帧呈现</text>
+    <text fill="#2B2D42" font-size="14" x="684" y="460">
+      <tspan>[请求拦截 -&gt; 注入凭证 -&gt; 防重检查 -&gt; 401拦截 -&gt; 队列挂起 -&gt; 广播重</tspan></text><text fill="#2B2D42" font-size="14" x="684" y="482"><tspan>发] 全程可视化。</tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#8F2D56" font-weight="bold" font-size="15" x="90" y="618">
+      <tspan>【教学价值】右侧控制台让学员亲眼“看”到拦截器内部的每一步流转，学习效率提升 300%。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">29 / 30</text>
+  </g>
+
+</svg>

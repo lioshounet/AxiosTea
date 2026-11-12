@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点四 · Loading缺陷</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">核心要点四：全屏 Loading 遮罩的布尔值并发致命缺陷</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">为什么简单的 isLoading = true / false 在生产中行不通？</text>
+  </g>
+
+  <!-- Visual Timeline Diagram -->
+  <g id="timeline-visual" data-pptx-bounds="60 190 1160 375">
+    <rect x="60" y="194" width="1160" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="1160" height="371" rx="14" fill="#FFFFFF" stroke="#8F2D56" stroke-width="1.5" />
+    
+    <!-- Timeline Title -->
+    <text x="85" y="230" font-size="18" font-weight="bold" fill="#8F2D56">时序对比：并发请求下的 Loading 状态劫持现场</text>
+    <line x1="85" y1="248" x2="1195" y2="248" stroke="#E2DDD5" stroke-width="1" />
+    
+    <!-- Request Bars -->
+    <text x="85" y="285" font-size="14" font-family="'Microsoft YaHei', Consolas, monospace" font-weight="bold" fill="#2B2D42">请求 A (耗时 100ms)</text>
+    <rect x="260" y="270" width="220" height="24" rx="6" fill="#8F2D56" opacity="0.8" />
+    <text x="370" y="287" font-size="12" fill="#FFFFFF" text-anchor="middle">执行中 (100ms 完成)</text>
+    
+    <text x="85" y="335" font-size="14" font-family="'Microsoft YaHei', Consolas, monospace" font-weight="bold" fill="#2B2D42">请求 B (耗时 300ms)</text>
+    <rect x="260" y="320" width="540" height="24" rx="6" fill="#218380" opacity="0.8" />
+    <text x="530" y="337" font-size="12" fill="#FFFFFF" text-anchor="middle">执行中 (300ms 完成)</text>
+
+    <text x="85" y="385" font-size="14" font-family="'Microsoft YaHei', Consolas, monospace" font-weight="bold" fill="#2B2D42">请求 C (耗时 500ms)</text>
+    <rect x="260" y="370" width="860" height="24" rx="6" fill="#FFBC42" opacity="0.8" />
+    <text x="690" y="387" font-size="12" fill="#FFFFFF" text-anchor="middle">执行中 (500ms 完成)</text>
+    
+    <line x1="85" y1="415" x2="1195" y2="415" stroke="#E2DDD5" stroke-dasharray="4 4" stroke-width="1" />
+    
+    <!-- Contrast 1: Single Boolean -->
+    <text x="85" y="450" font-size="15" font-weight="bold" fill="#D81159">单布尔值致命缺陷：</text>
+    <text x="240" y="450" font-size="14" fill="#2B2D42">100ms 请求 A 完成时直接调用 loading.close()，导致遮罩过早消失！请求 B/C 仍在执行中，用户以为加载完毕重复狂点。</text>
+
+    <!-- Contrast 2: Counter Pattern -->
+    <text x="85" y="495" font-size="15" font-weight="bold" fill="#218380">计数器模型完美解法：</text>
+    <text x="240" y="495" font-size="14" fill="#2B2D42">请求 A/B/C 发起时 counter = 3；A 完成 counter=2；B 完成 counter=1；直到 500ms C 完成 counter=0 时才关闭遮罩！</text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text x="90" y="618" font-size="15" font-weight="bold" fill="#8F2D56">
+      <tspan x="90" dy="0">【痛点总结】布尔变量无法感知并发请求的生命周期重叠，最早返回的请求会提前扼杀遮罩。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">17 / 30</text>
+  </g>
+
+</svg>

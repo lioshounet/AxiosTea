@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点六 · 文件名解码</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">从 Content-Disposition 响应头解码 RFC 5987 标准中文文件名</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">跨浏览器彻底攻克导出文件名中文乱码与截断难题</text>
+  </g>
+
+  <!-- Column 1 Card -->
+  <g id="card-01" data-pptx-bounds="60 190 360 375">
+    <rect x="60" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="80" y="210" width="32" height="32" rx="8" fill="#EF4444" />
+    <text x="96" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="120" y="222" font-size="15" font-weight="bold" fill="#EF4444">
+      <tspan x="120" dy="0">CORS 标头暴露 (后端必须配</tspan>
+      <tspan x="120" dy="19">置)</tspan>
+    </text>
+    <line x1="80" y1="258" x2="400" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text x="84" y="290" font-size="14" fill="#2B2D42">
+      <tspan x="84" dy="0">默认情况下浏览器跨域脚本只能读取通用</tspan><tspan x="84" dy="22">Header。后端必须配置 exposedHeaders: ['</tspan><tspan x="84" dy="22">Content-Disposition']，前端才能读取到文件</tspan><tspan x="84" dy="22">名标头！</tspan>
+    </text>
+  </g>
+  <!-- Column 2 Card -->
+  <g id="card-02" data-pptx-bounds="460 190 360 375">
+    <rect x="460" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="460" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#10B981" stroke-width="1.5" />
+    <rect x="480" y="210" width="32" height="32" rx="8" fill="#10B981" />
+    <text x="496" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text x="520" y="232" font-size="18" font-weight="bold" fill="#10B981">RFC 5987 现代 UTF-8 编码</text>
+    <line x1="480" y1="258" x2="800" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text x="484" y="290" font-size="14" fill="#2B2D42">
+      <tspan x="484" dy="0">优先正则匹配 filename*=UTF-8''%</tspan><tspan x="484" dy="22">E4%B8%AD%E6%96%87.txt，</tspan><tspan x="484" dy="22">通过 decodeURIComponent 解码，</tspan><tspan x="484" dy="22">完美支持任意复杂中文与特殊字符。</tspan>
+    </text>
+  </g>
+  <!-- Column 3 Card -->
+  <g id="card-03" data-pptx-bounds="860 190 360 375">
+    <rect x="860" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="860" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#218380" stroke-width="1.5" />
+    <rect x="880" y="210" width="32" height="32" rx="8" fill="#218380" />
+    <text x="896" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text x="920" y="232" font-size="18" font-weight="bold" fill="#218380">兼容传统引号模式与保底</text>
+    <line x1="880" y1="258" x2="1200" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text x="884" y="290" font-size="14" fill="#2B2D42">
+      <tspan x="884" dy="0">兼顾匹配传统 filename="xxx.txt" 格式，</tspan><tspan x="884" dy="22">若后端未提供则使用时间戳保底文件名，</tspan><tspan x="884" dy="22">保证下载永不落空。</tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text x="90" y="618" font-size="15" font-weight="bold" fill="#8F2D56">
+      <tspan x="90" dy="0">【避坑清单】RFC 5987 标准是目前全球各大浏览器对于非 ASCII 文件名的唯一官方标准解。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">24 / 30</text>
+  </g>
+
+</svg>

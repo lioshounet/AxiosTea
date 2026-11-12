@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点四 · 计数器模型</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">计数器模型 (Counter Pattern) 打造并发安全零闪烁 Loading</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">优雅的计数器算法与防抖延时平滑关闭</text>
+  </g>
+
+  <!-- Step 1 Card -->
+  <g id="pipe-step-01" data-pptx-bounds="60 190 216 370">
+    <rect x="60" y="194" width="216" height="366" rx="12" fill="#E2DDD5" />
+    <rect x="60" y="190" width="216" height="366" rx="12" fill="#FFFFFF" stroke="#8F2D56" stroke-width="1.5" />
+    <circle cx="88" cy="222" r="14" fill="#8F2D56" />
+    <text x="88" y="227" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="110" y="228" font-size="16" font-weight="bold" fill="#8F2D56">1. 计数器初始化</text>
+    <rect x="75" y="250" width="186" height="30" rx="6" fill="#F1EFE8" />
+    <text x="168.0" y="270" font-size="13" font-weight="bold" fill="#2B2D42" text-anchor="middle">let loadingCount = 0</text>
+    <line x1="75" y1="295" x2="261" y2="295" stroke="#E2DDD5" stroke-width="1" />
+    <text x="75" y="325" font-size="13" fill="#2B2D42">
+      <tspan x="75" dy="0">维护全局唯一的活跃加载请求</tspan><tspan x="75" dy="20">计数器</tspan>
+    </text>
+  </g>
+  <path id="arrow-1" d="M 280,360 L 290,368 L 280,376 Z" fill="#8F2D56" opacity="0.8" data-pptx-role="decoration" />
+  <!-- Step 2 Card -->
+  <g id="pipe-step-02" data-pptx-bounds="296 190 216 370">
+    <rect x="296" y="194" width="216" height="366" rx="12" fill="#E2DDD5" />
+    <rect x="296" y="190" width="216" height="366" rx="12" fill="#FFFFFF" stroke="#D81159" stroke-width="1.5" />
+    <circle cx="324" cy="222" r="14" fill="#D81159" />
+    <text x="324" y="227" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text x="346" y="228" font-size="16" font-weight="bold" fill="#D81159">2. 请求发起递增</text>
+    <rect x="311" y="250" width="186" height="30" rx="6" fill="#F1EFE8" />
+    <text x="404.0" y="270" font-size="13" font-weight="bold" fill="#2B2D42" text-anchor="middle">loadingCount++</text>
+    <line x1="311" y1="295" x2="497" y2="295" stroke="#E2DDD5" stroke-width="1" />
+    <text x="311" y="325" font-size="13" fill="#2B2D42">
+      <tspan x="311" dy="0">若此时递增到 1，正式唤起全</tspan><tspan x="311" dy="20">局 ElLoading.service 遮罩</tspan>
+    </text>
+  </g>
+  <path id="arrow-2" d="M 516,360 L 526,368 L 516,376 Z" fill="#D81159" opacity="0.8" data-pptx-role="decoration" />
+  <!-- Step 3 Card -->
+  <g id="pipe-step-03" data-pptx-bounds="532 190 216 370">
+    <rect x="532" y="194" width="216" height="366" rx="12" fill="#E2DDD5" />
+    <rect x="532" y="190" width="216" height="366" rx="12" fill="#FFFFFF" stroke="#218380" stroke-width="1.5" />
+    <circle cx="560" cy="222" r="14" fill="#218380" />
+    <text x="560" y="227" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text x="582" y="228" font-size="16" font-weight="bold" fill="#218380">3. 响应完成递减</text>
+    <rect x="547" y="250" width="186" height="30" rx="6" fill="#F1EFE8" />
+    <text x="640.0" y="270" font-size="13" font-weight="bold" fill="#2B2D42" text-anchor="middle">loadingCount--</text>
+    <line x1="547" y1="295" x2="733" y2="295" stroke="#E2DDD5" stroke-width="1" />
+    <text x="547" y="325" font-size="13" fill="#2B2D42">
+      <tspan x="547" dy="0">无论请求成功还是异常，</tspan><tspan x="547" dy="20">只要结束即执行安全递减</tspan>
+    </text>
+  </g>
+  <path id="arrow-3" d="M 752,360 L 762,368 L 752,376 Z" fill="#218380" opacity="0.8" data-pptx-role="decoration" />
+  <!-- Step 4 Card -->
+  <g id="pipe-step-04" data-pptx-bounds="768 190 216 370">
+    <rect x="768" y="194" width="216" height="366" rx="12" fill="#E2DDD5" />
+    <rect x="768" y="190" width="216" height="366" rx="12" fill="#FFFFFF" stroke="#FFBC42" stroke-width="1.5" />
+    <circle cx="796" cy="222" r="14" fill="#FFBC42" />
+    <text x="796" y="227" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">04</text>
+    <text x="818" y="228" font-size="16" font-weight="bold" fill="#FFBC42">4. 归零延迟关闭</text>
+    <rect x="783" y="250" width="186" height="30" rx="6" fill="#F1EFE8" />
+    <text x="876.0" y="270" font-size="13" font-weight="bold" fill="#2B2D42" text-anchor="middle">setTimeout(100ms)</text>
+    <line x1="783" y1="295" x2="969" y2="295" stroke="#E2DDD5" stroke-width="1" />
+    <text x="783" y="325" font-size="13" fill="#2B2D42">
+      <tspan x="783" dy="0">递减归 0 时通过 100ms 延迟</tspan><tspan x="783" dy="20">关闭，抹平微请求视觉频闪</tspan>
+    </text>
+  </g>
+  <path id="arrow-4" d="M 988,360 L 998,368 L 988,376 Z" fill="#FFBC42" opacity="0.8" data-pptx-role="decoration" />
+  <!-- Step 5 Card -->
+  <g id="pipe-step-05" data-pptx-bounds="1004 190 216 370">
+    <rect x="1004" y="194" width="216" height="366" rx="12" fill="#E2DDD5" />
+    <rect x="1004" y="190" width="216" height="366" rx="12" fill="#FFFFFF" stroke="#73D2DE" stroke-width="1.5" />
+    <circle cx="1032" cy="222" r="14" fill="#73D2DE" />
+    <text x="1032" y="227" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">05</text>
+    <text x="1054" y="228" font-size="16" font-weight="bold" fill="#73D2DE">5. 单请求开关</text>
+    <rect x="1019" y="250" width="186" height="30" rx="6" fill="#F1EFE8" />
+    <text x="1112.0" y="270" font-size="13" font-weight="bold" fill="#2B2D42" text-anchor="middle">showLoading: true</text>
+    <line x1="1019" y1="295" x2="1205" y2="295" stroke="#E2DDD5" stroke-width="1" />
+    <text x="1019" y="325" font-size="13" fill="#2B2D42">
+      <tspan x="1019" dy="0">按需为重要请求显式配置加载</tspan><tspan x="1019" dy="20">遮罩，非阻塞请求保持静默</tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text x="90" y="618" font-size="15" font-weight="bold" fill="#8F2D56">
+      <tspan x="90" dy="0">【配置开关】支持单请求通过 showLoading: true 按需开启，既可静默无感，亦可全屏遮罩。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">18 / 30</text>
+  </g>
+
+</svg>

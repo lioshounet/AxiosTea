@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点五 · 双轨错误体系</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">核心要点五：双轨错误体系——业务逻辑错误 vs HTTP协议错误</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">清晰划分两套截然不同的错误责任边界</text>
+  </g>
+
+  <!-- Column 1 Card -->
+  <g id="card-01" data-pptx-bounds="60 190 360 375">
+    <rect x="60" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#218380" stroke-width="1.5" />
+    <rect x="80" y="210" width="32" height="32" rx="8" fill="#218380" />
+    <text x="96" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="120" y="222" font-size="15" font-weight="bold" fill="#218380">
+      <tspan x="120" dy="0">1. 业务逻辑状态码 (Business</tspan>
+      <tspan x="120" dy="19">Error)</tspan>
+    </text>
+    <line x1="80" y1="258" x2="400" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text x="84" y="290" font-size="14" fill="#2B2D42">
+      <tspan x="84" dy="0">HTTP 状态码是 200，但返回数据内部包含</tspan><tspan x="84" dy="22">code !== 200 (如 code: 5001 余额不足、密码</tspan><tspan x="84" dy="22">错误)。由响应拦截器成功分支解包层统一</tspan><tspan x="84" dy="22">ElMessage.error 提示，</tspan><tspan x="84" dy="22">并 Promise.reject。</tspan>
+    </text>
+  </g>
+  <!-- Column 2 Card -->
+  <g id="card-02" data-pptx-bounds="460 190 360 375">
+    <rect x="460" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="460" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#8F2D56" stroke-width="1.5" />
+    <rect x="480" y="210" width="32" height="32" rx="8" fill="#8F2D56" />
+    <text x="496" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text x="520" y="222" font-size="15" font-weight="bold" fill="#8F2D56">
+      <tspan x="520" dy="0">2. HTTP 协议状态码</tspan>
+      <tspan x="520" dy="19">(Protocol Error)</tspan>
+    </text>
+    <line x1="480" y1="258" x2="800" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text x="484" y="290" font-size="14" fill="#2B2D42">
+      <tspan x="484" dy="0">由网络层、反向代理或网关抛出的协议错误 (如</tspan><tspan x="484" dy="22">401 未授权、403 权限不足、404 地址不存在、</tspan><tspan x="484" dy="22">500 服务宕机)。由响应错误拦截器捕获并分发</tspan><tspan x="484" dy="22">处理。</tspan>
+    </text>
+  </g>
+  <!-- Column 3 Card -->
+  <g id="card-03" data-pptx-bounds="860 190 360 375">
+    <rect x="860" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="860" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#D81159" stroke-width="1.5" />
+    <rect x="880" y="210" width="32" height="32" rx="8" fill="#D81159" />
+    <text x="896" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text x="920" y="222" font-size="15" font-weight="bold" fill="#D81159">
+      <tspan x="920" dy="0">3. 网络异常与超时 (Network</tspan>
+      <tspan x="920" dy="19">Error)</tspan>
+    </text>
+    <line x1="880" y1="258" x2="1200" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text x="884" y="290" font-size="14" fill="#2B2D42">
+      <tspan x="884" dy="0">断网、DNS 解析失败或 timeout 超时。</tspan><tspan x="884" dy="22">无服务端响应对象，需单独捕获提示并视情况</tspan><tspan x="884" dy="22">触发自动重试机制。</tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text x="90" y="618" font-size="15" font-weight="bold" fill="#8F2D56">
+      <tspan x="90" dy="0">【原则】两套错误体系绝不可混杂，职责分明才能保证错误提示精准无遗漏。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">19 / 30</text>
+  </g>
+
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点二 · 并发防死锁</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">高并发 401 避坑：请求队列挂起与批量唤醒防死锁</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">大厂技术面最核心的高并发网络考点</text>
+  </g>
+
+  
+  <g id="lane-step-01" data-pptx-bounds="60 190 275 375">
+    <rect x="60" y="194" width="275" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="275" height="371" rx="14" fill="#FFFFFF" stroke="#8F2D56" stroke-width="1.5" />
+    <rect x="76" y="210" width="28" height="28" rx="6" fill="#8F2D56" />
+    <text x="90" y="230" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="110" y="230" font-size="15" font-weight="bold" fill="#8F2D56">阶段一：主请求 401 触发</text>
+    <line x1="76" y1="255" x2="319" y2="255" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="13" x="78" y="295">
+      <tspan>Req #1 请求返回 401</tspan></text><text fill="#2B2D42" font-size="13" x="78" y="317">切入响应拦截器分支</text><text fill="#2B2D42" font-size="13" x="78" y="339"><tspan>触发 handleTokenRefresh()</tspan>
+    </text></g>
+  <path id="lane-arrow-1" d="M 337,360 L 345,368 L 337,376 Z" fill="#8F2D56" opacity="0.8" data-pptx-role="decoration" />
+  
+  <g id="lane-step-02" data-pptx-bounds="355 190 275 375">
+    <rect x="355" y="194" width="275" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="355" y="190" width="275" height="371" rx="14" fill="#FFFFFF" stroke="#D81159" stroke-width="1.5" />
+    <rect x="371" y="210" width="28" height="28" rx="6" fill="#D81159" />
+    <text x="385" y="230" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text fill="#D81159" font-weight="bold" font-size="13" x="405" y="222">
+      <tspan>阶段二：isRefreshing 互斥</tspan>
+      </text><text fill="#D81159" font-weight="bold" font-size="13" x="405" y="240"><tspan>锁</tspan>
+    </text><line x1="371" y1="255" x2="614" y2="255" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="13" x="373" y="295">
+      <tspan>判断 isRefreshing === false</tspan></text><text fill="#2B2D42" font-size="13" x="373" y="317">立即置为 true 锁定状态</text><text fill="#2B2D42" font-size="13" x="373" y="339"><tspan>调用 /api/auth/refresh 刷新</tspan>
+    </text></g>
+  <path id="lane-arrow-2" d="M 632,360 L 640,368 L 632,376 Z" fill="#D81159" opacity="0.8" data-pptx-role="decoration" />
+  
+  <g id="lane-step-03" data-pptx-bounds="650 190 275 375">
+    <rect x="650" y="194" width="275" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="650" y="190" width="275" height="371" rx="14" fill="#FFFFFF" stroke="#FFBC42" stroke-width="1.5" />
+    <rect x="666" y="210" width="28" height="28" rx="6" fill="#FFBC42" />
+    <text x="680" y="230" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text x="700" y="230" font-size="15" font-weight="bold" fill="#FFBC42">阶段三：并发请求队列挂起</text>
+    <line x1="666" y1="255" x2="909" y2="255" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="13" x="668" y="295">
+      <tspan>Req #2, #3, #4 并发到达</tspan></text><text fill="#2B2D42" font-size="13" x="668" y="317">发现 isRefreshing === true</text><text fill="#2B2D42" font-size="13" x="668" y="339"><tspan>返回未决 Promise 压入 retryQueue</tspan>
+    </text></g>
+  <path id="lane-arrow-3" d="M 927,360 L 935,368 L 927,376 Z" fill="#FFBC42" opacity="0.8" data-pptx-role="decoration" />
+  
+  <g id="lane-step-04" data-pptx-bounds="945 190 275 375">
+    <rect x="945" y="194" width="275" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="945" y="190" width="275" height="371" rx="14" fill="#FFFFFF" stroke="#218380" stroke-width="1.5" />
+    <rect x="961" y="210" width="28" height="28" rx="6" fill="#218380" />
+    <text x="975" y="230" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">04</text>
+    <text x="995" y="230" font-size="15" font-weight="bold" fill="#218380">阶段四：全队列批量 Replay</text>
+    <line x1="961" y1="255" x2="1204" y2="255" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="13" x="963" y="295">
+      <tspan>新 Token 换回成功</tspan></text><text fill="#2B2D42" font-size="13" x="963" y="317">遍历 retryQueue(newToken)</text><text fill="#2B2D42" font-size="13" x="963" y="339"><tspan>批量完成重发并交付页面</tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#8F2D56" font-weight="bold" font-size="15" x="90" y="618">
+      <tspan>【考点精髓】没有队列机制，5 个并发请求将引发 5 次刷新，导致 RefreshToken 立即失效引发系统雪崩！</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">11 / 30</text>
+  </g>
+
+</svg>

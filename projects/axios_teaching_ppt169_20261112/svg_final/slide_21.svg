@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点五 · 自动退避重试</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">网络抖动与 503 故障：接口智能指数退避重试机制</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">大幅增强移动端弱网与微服务扩缩容时的系统健壮性</text>
+  </g>
+
+  
+  <g id="card-01" data-pptx-bounds="60 190 360 375">
+    <rect x="60" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="80" y="210" width="32" height="32" rx="8" fill="#EF4444" />
+    <text x="96" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="120" y="232" font-size="18" font-weight="bold" fill="#EF4444">严格的重试准入条件</text>
+    <line x1="80" y1="258" x2="400" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="84" y="290">
+      <tspan>严禁重试 4xx 客户端错误 (参数错误、401、</tspan></text><text fill="#2B2D42" font-size="14" x="84" y="312">404)！ 仅允许重试：网络中断断网、</text><text fill="#2B2D42" font-size="14" x="84" y="334">ECONNABORTED 超时、以及 502/503 临时不</text><text fill="#2B2D42" font-size="14" x="84" y="356"><tspan>可用错误。</tspan>
+    </text></g>
+  
+  <g id="card-02" data-pptx-bounds="460 190 360 375">
+    <rect x="460" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="460" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#218380" stroke-width="1.5" />
+    <rect x="480" y="210" width="32" height="32" rx="8" fill="#218380" />
+    <text x="496" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text x="520" y="232" font-size="18" font-weight="bold" fill="#218380">重试参数灵活配置</text>
+    <line x1="480" y1="258" x2="800" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="484" y="290">
+      <tspan>在请求配置中注入 retryCount: 3 (最大重试</tspan></text><text fill="#2B2D42" font-size="14" x="484" y="312">次数) 与 retryDelay: 1000 (重试间隔毫</text><text fill="#2B2D42" font-size="14" x="484" y="334">秒)。内部使用 __retryCount 进行尝试计数追</text><text fill="#2B2D42" font-size="14" x="484" y="356"><tspan>踪。</tspan>
+    </text></g>
+  
+  <g id="card-03" data-pptx-bounds="860 190 360 375">
+    <rect x="860" y="194" width="360" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="860" y="190" width="360" height="371" rx="14" fill="#FFFFFF" stroke="#FFBC42" stroke-width="1.5" />
+    <rect x="880" y="210" width="32" height="32" rx="8" fill="#FFBC42" />
+    <text x="896" y="232" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text x="920" y="232" font-size="18" font-weight="bold" fill="#FFBC42">信号量重置关键避坑</text>
+    <line x1="880" y1="258" x2="1200" y2="258" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#2B2D42" font-size="14" x="884" y="290">
+      <tspan>重试前必须检查并清理旧请求上的</tspan></text><text fill="#2B2D42" font-size="14" x="884" y="312">config.signal，避免因沿用已 aborted 的旧信</text><text fill="#2B2D42" font-size="14" x="884" y="334"><tspan>号量导致重试直接被取消！</tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#8F2D56" font-weight="bold" font-size="15" x="90" y="618">
+      <tspan>【实战验证】配套后端提供 /api/test/retry 接口，前 2 次故意报 503，第 3 次自动重试成功！</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">21 / 30</text>
+  </g>
+
+</svg>

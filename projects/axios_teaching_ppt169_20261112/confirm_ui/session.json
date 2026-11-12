@@ -1,0 +1,22 @@
+{
+  "phase": "strategist",
+  "status": "done",
+  "current_stage": "final",
+  "expected_stage": null,
+  "expected_stage_number": null,
+  "recommendation_stage": "stage2",
+  "recommendation_stage_number": 2,
+  "recommendation_file": "recommendations.stage2.json",
+  "recommendation_version": "9993d5c47dd5561aeaf49e1bab01d3cf2945c2c1af219a17984f6f6bff694508",
+  "recommendation_error": null,
+  "result_stage": "final",
+  "result_stage_number": 2,
+  "result_version": "782ce39443d91779a60f58821977c7d14fe0b35b7fd8dad82cc3c55ce28df1ac",
+  "server_port": 5050,
+  "event": "final-submitted",
+  "template_selection_version": "774bc83a62976f5d7e0af8d1af84c39bd5499d8dd200aede089dcf87d714bbf1",
+  "template_install_version": null,
+  "template_status": "ready",
+  "template_error": null,
+  "updated_at": "2026-11-12T11:54:44"
+}

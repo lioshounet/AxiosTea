@@ -1,0 +1,11 @@
+{
+  "name": "axios-teaching-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vue 3 + Axios 高级封装教学全功能实践项目 (包含完整 Node.js 后端)",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client run dev"
+  }
+}
+

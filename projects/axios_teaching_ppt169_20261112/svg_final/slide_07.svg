@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点一 · 数据解包</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">统一业务解包机制：让业务层少写一层 .data.data</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">终结冗余取值，统一业务状态码处理</text>
+  </g>
+
+  
+  <g id="code-box-left" data-pptx-bounds="60 190 560 375">
+    <rect x="60" y="194" width="560" height="371" rx="12" fill="#E2DDD5" />
+    <rect x="60" y="190" width="560" height="371" rx="12" fill="#2B2D42" stroke="#8F2D56" stroke-width="1.5" />
+    
+    <rect x="60" y="190" width="560" height="36" rx="12" fill="#1E1E2E" />
+    <circle cx="80" cy="208" r="5" fill="#EF4444" />
+    <circle cx="95" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="110" cy="208" r="5" fill="#10B981" />
+    <text x="340.0" y="213" font-size="13" font-weight="bold" fill="#CBD5E1" text-anchor="middle">原生 Axios 编写方式 (繁琐脆弱)</text>
+    
+    <text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="258">
+      <tspan><tspan fill="#6C757D"> 1 </tspan><tspan fill="#E2E8F0">// 页面层充斥多层取值与判空样板代码</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="280"><tspan><tspan fill="#6C757D"> 2 </tspan><tspan fill="#E2E8F0">const res = await axios.get('/api/user');</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="302"><tspan><tspan fill="#6C757D"> 3 </tspan><tspan fill="#E2E8F0">if (res.data &amp;&amp; res.data.code === 200) {</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="324"><tspan><tspan fill="#6C757D"> 4 </tspan><tspan fill="#E2E8F0">  this.user = res.data.data;</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="346"><tspan><tspan fill="#6C757D"> 5 </tspan><tspan fill="#E2E8F0">} else {</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="368"><tspan><tspan fill="#6C757D"> 6 </tspan><tspan fill="#E2E8F0">  ElMessage.error(res.data.message);</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="80" y="390"><tspan><tspan fill="#6C757D"> 7 </tspan><tspan fill="#E2E8F0">}</tspan></tspan>
+    </text></g>
+
+  
+  <g id="code-box-right" data-pptx-bounds="660 190 560 375">
+    <rect x="660" y="194" width="560" height="371" rx="12" fill="#E2DDD5" />
+    <rect x="660" y="190" width="560" height="371" rx="12" fill="#2B2D42" stroke="#218380" stroke-width="1.5" />
+    
+    <rect x="660" y="190" width="560" height="36" rx="12" fill="#1E1E2E" />
+    <circle cx="680" cy="208" r="5" fill="#EF4444" />
+    <circle cx="695" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="710" cy="208" r="5" fill="#10B981" />
+    <text x="940.0" y="213" font-size="13" font-weight="bold" fill="#CBD5E1" text-anchor="middle">封装后企业级编写方式 (清爽精准)</text>
+    
+    <text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="258">
+      <tspan><tspan fill="#6C757D"> 1 </tspan><tspan fill="#E2E8F0">// request.ts 响应拦截器自动解包</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="280"><tspan><tspan fill="#6C757D"> 2 </tspan><tspan fill="#E2E8F0">if (data.code === 200) return data.data;</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="302"><tspan><tspan fill="#6C757D"> 3 </tspan><tspan fill="#E2E8F0" /></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="324"><tspan><tspan fill="#6C757D"> 4 </tspan><tspan fill="#E2E8F0">// 页面直接消费，配合 TS 精准提示</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="346"><tspan><tspan fill="#6C757D"> 5 </tspan><tspan fill="#E2E8F0">const user = await getUserProfileApi();</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="13" x="680" y="368"><tspan><tspan fill="#6C757D"> 6 </tspan><tspan fill="#E2E8F0">console.log(user.username, user.role);</tspan></tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#8F2D56" font-weight="bold" font-size="15" x="90" y="618">
+      <tspan>【收益】解包层同时过滤了业务异常 (如 code === 5001)，业务页面只需关注成功逻辑。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">07 / 30</text>
+  </g>
+
+</svg>

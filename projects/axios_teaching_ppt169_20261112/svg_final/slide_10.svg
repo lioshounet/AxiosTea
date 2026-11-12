@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点二 · 单请求刷新</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">单请求 401 拦截与自动换 Token 重发代码实战</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">响应错误拦截器中的关键拦截与异步重放</text>
+  </g>
+
+  
+  <g id="code-main-container" data-pptx-bounds="60 190 1160 375">
+    <rect x="60" y="194" width="1160" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="1160" height="371" rx="14" fill="#2B2D42" stroke="#8F2D56" stroke-width="1.5" />
+    <rect x="60" y="190" width="1160" height="36" rx="14" fill="#1E1E2E" />
+    <circle cx="85" cy="208" r="5" fill="#EF4444" />
+    <circle cx="100" cy="208" r="5" fill="#F59E0B" />
+    <circle cx="115" cy="208" r="5" fill="#10B981" />
+    <text x="640" y="213" font-size="14" font-weight="bold" fill="#CBD5E1" text-anchor="middle">TypeScript 源码实现 · 核心切面</text>
+    <text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="260">
+      <tspan><tspan fill="#64748B"> 1  </tspan><tspan fill="#E2E8F0">if (response &amp;&amp; response.status === 401 &amp;&amp; config) {</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="284"><tspan><tspan fill="#64748B"> 2  </tspan><tspan fill="#E2E8F0">  const refreshToken = getRefreshToken();</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="308"><tspan><tspan fill="#64748B"> 3  </tspan><tspan fill="#E2E8F0">  if (!refreshToken) return handleLogout();</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="332"><tspan><tspan fill="#64748B"> 4  </tspan><tspan fill="#E2E8F0" /></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="356"><tspan><tspan fill="#64748B"> 5  </tspan><tspan fill="#A0AEC0">  // 1. 开启无感刷新状态锁</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="380"><tspan><tspan fill="#64748B"> 6  </tspan><tspan fill="#E2E8F0">  isRefreshing = true;</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="404"><tspan><tspan fill="#64748B"> 7  </tspan><tspan fill="#E2E8F0">  const { data } = await refreshService.post('/api/auth/refresh', { refreshToken });</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="428"><tspan><tspan fill="#64748B"> 8  </tspan><tspan fill="#E2E8F0">  setTokens(data.data); // 持久化更新新 Token</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="452"><tspan><tspan fill="#64748B"> 9  </tspan><tspan fill="#E2E8F0" /></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="476"><tspan><tspan fill="#64748B">10  </tspan><tspan fill="#A0AEC0">  // 2. 注入新 Token 并重新派发原本被拦截的请求</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="500"><tspan><tspan fill="#64748B">11  </tspan><tspan fill="#E2E8F0">  config.headers.set('Authorization', `Bearer ${data.data.accessToken}`);</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="524"><tspan><tspan fill="#64748B">12  </tspan><tspan fill="#E2E8F0">  return service(config); // 核心：重放原请求并返回其 Promise！</tspan></tspan></text><text font-family="'Microsoft YaHei', Consolas, monospace" font-size="14" x="85" y="548"><tspan><tspan fill="#64748B">13  </tspan><tspan fill="#E2E8F0">}</tspan></tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text fill="#8F2D56" font-weight="bold" font-size="15" x="90" y="618">
+      <tspan>【核心技巧】使用 return service(config) 将重发后的请求 Promise 直接返回给最初的调用方。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">10 / 30</text>
+  </g>
+
+</svg>

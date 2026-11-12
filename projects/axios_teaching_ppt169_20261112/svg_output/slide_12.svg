@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#FAF9F5" data-pptx-role="background" />
+  <path id="deco-sheet-1" d="M 0,0 L 380,0 C 330,180 460,260 360,440 C 280,580 400,680 300,720 L 0,720 Z" fill="#F1EFE8" opacity="0.6" data-pptx-role="decoration" />
+  <path id="deco-sheet-2" d="M 0,0 L 200,0 C 160,200 260,320 170,500 C 120,620 200,680 160,720 L 0,720 Z" fill="#8F2D56" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#8F2D56" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">核心要点二 · 实例隔离</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#0F172A">为什么刷新 Token 严禁使用主 Axios 实例？</text>
+    <text x="60" y="146" font-size="16" fill="#6C757D">架构红线：警惕拦截器内部递归调用造成的死循环爆栈</text>
+  </g>
+
+  <!-- Compare Card compare-card-left -->
+  <g id="compare-card-left" data-pptx-bounds="60 190 560 375">
+    <rect x="60" y="194" width="560" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="190" width="560" height="371" rx="14" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="80" y="210" width="520" height="40" rx="8" fill="#EF4444" opacity="0.12" />
+    <rect x="80" y="210" width="8" height="40" rx="4" fill="#EF4444" />
+    <text x="100" y="236" font-size="18" font-weight="bold" fill="#EF4444">错误做法 (主实例递归调用)</text>
+    <line x1="80" y1="265" x2="600" y2="265" stroke="#E2DDD5" stroke-width="1" />
+    <text x="84" y="300" font-size="14" fill="#2B2D42">
+      <tspan x="84" dy="0">在 401 拦截器内部调用 service.post('/api/auth/refresh')。</tspan><tspan x="84" dy="24">【致命后果】若 refreshToken 也已失效过期，refresh 接口自身亦会返回</tspan><tspan x="84" dy="24">401！主实例拦截器将再次拦截并再次发起 refresh，直接陷入无限死循环</tspan><tspan x="84" dy="24">递归，瞬间导致浏览器卡死爆栈！</tspan>
+    </text>
+  </g>
+
+  <!-- Compare Card compare-card-right -->
+  <g id="compare-card-right" data-pptx-bounds="660 190 560 375">
+    <rect x="660" y="194" width="560" height="371" rx="14" fill="#E2DDD5" />
+    <rect x="660" y="190" width="560" height="371" rx="14" fill="#FFFFFF" stroke="#10B981" stroke-width="1.5" />
+    <rect x="680" y="210" width="520" height="40" rx="8" fill="#10B981" opacity="0.12" />
+    <rect x="680" y="210" width="8" height="40" rx="4" fill="#10B981" />
+    <text x="700" y="236" font-size="18" font-weight="bold" fill="#10B981">正确做法 (独立轻量实例)</text>
+    <line x1="680" y1="265" x2="1200" y2="265" stroke="#E2DDD5" stroke-width="1" />
+    <text x="684" y="300" font-size="14" fill="#2B2D42">
+      <tspan x="684" dy="0">单独声明 const refreshService = axios.create()，不挂载任何 401 响应</tspan><tspan x="684" dy="24">拦截器。</tspan><tspan x="684" dy="24">【架构优势】若 refresh 接口失败直接 reject 抛出异常，安全中断流程，</tspan><tspan x="684" dy="24">清空本地凭证并弹窗引导跳转登录，系统平稳降级兜底。</tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#E2DDD5" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#F1EFE8" stroke="#E2DDD5" stroke-width="1" />
+    <text x="90" y="618" font-size="15" font-weight="bold" fill="#8F2D56">
+      <tspan x="90" dy="0">【红线铁律】网络层内部辅助性请求，绝不能继承包含重试或重定向逻辑的业务拦截器。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#6C757D">Vue 3 + TS 工业级 Axios 深度封装实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#8F2D56" text-anchor="end">12 / 30</text>
+  </g>
+
+</svg>

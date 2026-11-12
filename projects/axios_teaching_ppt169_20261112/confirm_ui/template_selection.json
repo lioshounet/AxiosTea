@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "phase": "template",
+  "status": "confirmed",
+  "mode": "free_design",
+  "selections": [],
+  "options_sha256": "7cb6a700bed8b7893f0d569e7cbb0daf45ee6a8289d3ed0aac30b7c7d7b60ee1",
+  "selection_sha256": "e8387620e957096be97f4051df1e9f5c90c6976dd6cf7c547f228e7c831c4c36",
+  "confirmed_at": "2026-11-12T11:49:00",
+  "root_snapshots": []
+}
