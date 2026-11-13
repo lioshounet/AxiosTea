@@ -1,0 +1,517 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "early",
+  "target": "C:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "8418e1736dde789e87004d79cd2180028f9b5a0cebfb950b188e0a9d0ca3d81e",
+    "file_count": 5,
+    "files": [
+      {
+        "file": "slide_01.svg",
+        "sha256": "0cedadca0f56216c355454c0ec376e469dd2c43f013af166d43c21f0cc02c84d"
+      },
+      {
+        "file": "slide_02.svg",
+        "sha256": "7f5390dc745898d42d4301fd7ad454aea9442730bcc4fb40369d3b1770e2ad24"
+      },
+      {
+        "file": "slide_03.svg",
+        "sha256": "9c3836d14a87c274da86ef900123972be1c4962f8bb432d82cf0ff662c49ae22"
+      },
+      {
+        "file": "slide_04.svg",
+        "sha256": "9ff54dde1494ca7b0abbe5a060256271dfa05b1b0b1e300b0580cac25190582b"
+      },
+      {
+        "file": "slide_05.svg",
+        "sha256": "d95521fcbe93af89854244188b5e46bd6ac32930adc6ff01ed2ac56529853996"
+      }
+    ]
+  },
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "warnings": 0,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 0,
+      "issues": []
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#060911": [
+        "slide_01.svg",
+        "slide_02.svg",
+        "slide_03.svg",
+        "slide_04.svg",
+        "slide_05.svg"
+      ],
+      "#10B981": [
+        "slide_02.svg"
+      ],
+      "#38BDF8": [
+        "slide_02.svg",
+        "slide_03.svg",
+        "slide_05.svg"
+      ],
+      "#A855F7": [
+        "slide_03.svg"
+      ],
+      "#CBD5E1": [
+        "slide_01.svg",
+        "slide_02.svg",
+        "slide_03.svg",
+        "slide_04.svg",
+        "slide_05.svg"
+      ],
+      "#D81159": [
+        "slide_01.svg",
+        "slide_04.svg"
+      ],
+      "#EF4444": [
+        "slide_02.svg",
+        "slide_03.svg",
+        "slide_05.svg"
+      ],
+      "#F59E0B": [
+        "slide_03.svg",
+        "slide_05.svg"
+      ]
+    },
+    "fonts": {
+      "'Microsoft YaHei', Arial": [
+        "slide_01.svg",
+        "slide_02.svg",
+        "slide_03.svg",
+        "slide_04.svg",
+        "slide_05.svg"
+      ]
+    },
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 5,
+    "totals": {
+      "text_elements": 87,
+      "image_placements": 0,
+      "icons": 0,
+      "svg_geometry_elements": 105,
+      "preset_shapes": 0,
+      "page_frame_elements": 15,
+      "marker_uses": 0,
+      "inline_emphasis_runs": 0,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 0,
+      "icons": 0,
+      "presets": 0,
+      "charts": 0,
+      "tables": 0,
+      "formulas": 0,
+      "inline_emphasis_runs": 0,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 30,
+    "geometry_elements": {
+      "circle": 0,
+      "ellipse": 0,
+      "line": 6,
+      "path": 10,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 89
+    },
+    "preset_names": {},
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": []
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "slide_01.svg",
+      "path": "c:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113\\svg_output\\slide_01.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 25,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 23,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "'Microsoft YaHei', Arial",
+          "'Microsoft YaHei', Consolas, monospace"
+        ],
+        "text_elements": 25,
+        "tspan_elements": 12,
+        "contextual_values": {
+          "colors": [
+            "#060911",
+            "#CBD5E1",
+            "#D81159"
+          ],
+          "font_families": [
+            "'Microsoft YaHei', Arial"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "0cedadca0f56216c355454c0ec376e469dd2c43f013af166d43c21f0cc02c84d"
+    },
+    {
+      "file": "slide_02.svg",
+      "path": "c:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113\\svg_output\\slide_02.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 14,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "'Microsoft YaHei', Arial"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 13,
+        "contextual_values": {
+          "colors": [
+            "#060911",
+            "#10B981",
+            "#38BDF8",
+            "#CBD5E1",
+            "#EF4444"
+          ],
+          "font_families": [
+            "'Microsoft YaHei', Arial"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "7f5390dc745898d42d4301fd7ad454aea9442730bcc4fb40369d3b1770e2ad24"
+    },
+    {
+      "file": "slide_03.svg",
+      "path": "c:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113\\svg_output\\slide_03.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 17,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "'Microsoft YaHei', Arial"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 9,
+        "contextual_values": {
+          "colors": [
+            "#060911",
+            "#38BDF8",
+            "#A855F7",
+            "#CBD5E1",
+            "#EF4444",
+            "#F59E0B"
+          ],
+          "font_families": [
+            "'Microsoft YaHei', Arial"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "9c3836d14a87c274da86ef900123972be1c4962f8bb432d82cf0ff662c49ae22"
+    },
+    {
+      "file": "slide_04.svg",
+      "path": "c:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113\\svg_output\\slide_04.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 14,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 21,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "'Microsoft YaHei', Arial"
+        ],
+        "text_elements": 14,
+        "tspan_elements": 3,
+        "contextual_values": {
+          "colors": [
+            "#060911",
+            "#CBD5E1",
+            "#D81159"
+          ],
+          "font_families": [
+            "'Microsoft YaHei', Arial"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "9ff54dde1494ca7b0abbe5a060256271dfa05b1b0b1e300b0580cac25190582b"
+    },
+    {
+      "file": "slide_05.svg",
+      "path": "c:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113\\svg_output\\slide_05.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 14,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 2
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "'Microsoft YaHei', Arial"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 10,
+        "contextual_values": {
+          "colors": [
+            "#060911",
+            "#38BDF8",
+            "#CBD5E1",
+            "#EF4444",
+            "#F59E0B"
+          ],
+          "font_families": [
+            "'Microsoft YaHei', Arial"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "d95521fcbe93af89854244188b5e46bd6ac32930adc6ff01ed2ac56529853996"
+    }
+  ]
+}

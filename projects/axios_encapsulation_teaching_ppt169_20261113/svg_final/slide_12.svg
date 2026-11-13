@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#73D2DE" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#73D2DE" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#73D2DE" text-anchor="middle">核心要点二 · 时序泳道</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">多接口并发 401 时的安全排队与批量 Replay 时序泳道</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">可视化复现微前端与多数据卡片并发加载下的令牌自愈现场</text>
+  </g>
+
+  
+  <g id="lane-step-01" data-pptx-bounds="60 190 275 375">
+    <rect x="60" y="194" width="275" height="371" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="275" height="371" rx="14" fill="#1E293B" stroke="#D81159" stroke-width="1.5" />
+    <rect x="76" y="210" width="28" height="28" rx="6" fill="#0B0F19" stroke="#D81159" stroke-width="1" />
+    <text x="90" y="230" font-size="14" font-weight="bold" fill="#D81159" text-anchor="middle">01</text>
+    <text x="110" y="230" font-size="15" font-weight="bold" fill="#D81159">阶段一：主请求 401 触发</text>
+    <line x1="76" y1="255" x2="319" y2="255" stroke="#334155" stroke-width="1" />
+    <text font-size="13" fill="#CBD5E1" x="78" y="295">
+      <tspan>Req #1 请求返回 401</tspan></text><text font-size="13" fill="#CBD5E1" x="78" y="317">切入响应拦截器分支</text><text font-size="13" fill="#CBD5E1" x="78" y="339"><tspan>触发 handleTokenRefresh()</tspan>
+    </text></g>
+  <path id="lane-arrow-1" d="M 337,360 L 345,368 L 337,376 Z" fill="#D81159" opacity="0.8" data-pptx-role="decoration" />
+  
+  <g id="lane-step-02" data-pptx-bounds="355 190 275 375">
+    <rect x="355" y="194" width="275" height="371" rx="14" fill="#060911" />
+    <rect x="355" y="190" width="275" height="371" rx="14" fill="#1E293B" stroke="#FFBC42" stroke-width="1.5" />
+    <rect x="371" y="210" width="28" height="28" rx="6" fill="#0B0F19" stroke="#FFBC42" stroke-width="1" />
+    <text x="385" y="230" font-size="14" font-weight="bold" fill="#FFBC42" text-anchor="middle">02</text>
+    <text font-weight="bold" font-size="13" fill="#FFBC42" x="405" y="222">
+      <tspan>阶段二：isRefreshing 互斥</tspan>
+      </text><text font-weight="bold" font-size="13" fill="#FFBC42" x="405" y="240"><tspan>锁</tspan>
+    </text><line x1="371" y1="255" x2="614" y2="255" stroke="#334155" stroke-width="1" />
+    <text font-size="13" fill="#CBD5E1" x="373" y="295">
+      <tspan>判断 isRefreshing === false</tspan></text><text font-size="13" fill="#CBD5E1" x="373" y="317">立即置为 true 锁定状态</text><text font-size="13" fill="#CBD5E1" x="373" y="339"><tspan>调用 /api/auth/refresh 刷新</tspan>
+    </text></g>
+  <path id="lane-arrow-2" d="M 632,360 L 640,368 L 632,376 Z" fill="#FFBC42" opacity="0.8" data-pptx-role="decoration" />
+  
+  <g id="lane-step-03" data-pptx-bounds="650 190 275 375">
+    <rect x="650" y="194" width="275" height="371" rx="14" fill="#060911" />
+    <rect x="650" y="190" width="275" height="371" rx="14" fill="#1E293B" stroke="#73D2DE" stroke-width="1.5" />
+    <rect x="666" y="210" width="28" height="28" rx="6" fill="#0B0F19" stroke="#73D2DE" stroke-width="1" />
+    <text x="680" y="230" font-size="14" font-weight="bold" fill="#73D2DE" text-anchor="middle">03</text>
+    <text x="700" y="230" font-size="15" font-weight="bold" fill="#73D2DE">阶段三：并发请求队列挂起</text>
+    <line x1="666" y1="255" x2="909" y2="255" stroke="#334155" stroke-width="1" />
+    <text font-size="13" fill="#CBD5E1" x="668" y="295">
+      <tspan>Req #2, #3, #4 并发到达</tspan></text><text font-size="13" fill="#CBD5E1" x="668" y="317">发现 isRefreshing === true</text><text font-size="13" fill="#CBD5E1" x="668" y="339"><tspan>返回未决 Promise 压入 retryQueue</tspan>
+    </text></g>
+  <path id="lane-arrow-3" d="M 927,360 L 935,368 L 927,376 Z" fill="#73D2DE" opacity="0.8" data-pptx-role="decoration" />
+  
+  <g id="lane-step-04" data-pptx-bounds="945 190 275 375">
+    <rect x="945" y="194" width="275" height="371" rx="14" fill="#060911" />
+    <rect x="945" y="190" width="275" height="371" rx="14" fill="#1E293B" stroke="#218380" stroke-width="1.5" />
+    <rect x="961" y="210" width="28" height="28" rx="6" fill="#0B0F19" stroke="#218380" stroke-width="1" />
+    <text x="975" y="230" font-size="14" font-weight="bold" fill="#218380" text-anchor="middle">04</text>
+    <text x="995" y="230" font-size="15" font-weight="bold" fill="#218380">阶段四：全队列批量 Replay</text>
+    <line x1="961" y1="255" x2="1204" y2="255" stroke="#334155" stroke-width="1" />
+    <text font-size="13" fill="#CBD5E1" x="963" y="295">
+      <tspan>新 Token 换回成功</tspan></text><text font-size="13" fill="#CBD5E1" x="963" y="317">遍历 retryQueue(newToken)</text><text font-size="13" fill="#CBD5E1" x="963" y="339"><tspan>批量完成重发并交付页面</tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#73D2DE" />
+    <text font-weight="bold" font-size="14" fill="#73D2DE" x="95" y="618">
+      <tspan>💡 架构核心解析：【时序闭环】Req 1 成功完成开拓任务，Req 2/3/4 安全搭乘顺风车，无任何重复鉴权开销。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#73D2DE" text-anchor="end">12 / 30</text>
+  </g>
+
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#73D2DE" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#73D2DE" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#73D2DE" text-anchor="middle">核心要点六 · RFC解码</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">RFC 5987 规范标准：解析 Content-Disposition 中文文件名</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">彻底攻克标准 HTTP 头中 filename*=utf-8'' 编码的解码算法</text>
+  </g>
+
+  <!-- Code Card code-box-left -->
+  <g id="code-box-left" data-pptx-bounds="60 190 560 375">
+    <rect x="60" y="194" width="560" height="371" rx="12" fill="#060911" />
+    <rect x="60" y="190" width="560" height="371" rx="12" fill="#0F172A" stroke="#D81159" stroke-width="1.5" />
+    <!-- Window Bar -->
+    <rect x="60" y="190" width="560" height="36" rx="12" fill="#1E293B" />
+    <circle cx="80" cy="208" r="5" fill="#D81159" />
+    <circle cx="95" cy="208" r="5" fill="#FFBC42" />
+    <circle cx="110" cy="208" r="5" fill="#218380" />
+    <text x="340.0" y="213" font-size="13" font-weight="bold" fill="#CBD5E1" text-anchor="middle">标准 HTTP 响应头样例</text>
+    <!-- Code Area -->
+    <text x="80" y="258" font-size="13" font-family="'Microsoft YaHei', Consolas, monospace">
+      <tspan x="80" dy="0"><tspan fill="#475569"> 1 </tspan><tspan fill="#64748B">// 现代后端标准 Content-Disposition Header</tspan></tspan><tspan x="80" dy="22"><tspan fill="#475569"> 2 </tspan><tspan fill="#E2E8F0">Content-Disposition: attachment;</tspan></tspan><tspan x="80" dy="22"><tspan fill="#475569"> 3 </tspan><tspan fill="#E2E8F0">  filename="fallback.xlsx";</tspan></tspan><tspan x="80" dy="22"><tspan fill="#475569"> 4 </tspan><tspan fill="#E2E8F0">  filename*=utf-8''%E7%94%A8%E6%88%B7...;</tspan></tspan><tspan x="80" dy="22"><tspan fill="#475569"> 5 </tspan><tspan fill="#E2E8F0" /></tspan><tspan x="80" dy="22"><tspan fill="#475569"> 6 </tspan><tspan fill="#64748B">// 包含了两个文件名定义：</tspan></tspan><tspan x="80" dy="22"><tspan fill="#475569"> 7 </tspan><tspan fill="#64748B">// 1. filename: 传统 ASCII 兼容备用名</tspan></tspan><tspan x="80" dy="22"><tspan fill="#475569"> 8 </tspan><tspan fill="#64748B">// 2. filename*: RFC 5987 标准 UTF-8 编码真名</tspan></tspan>
+    </text>
+  </g>
+
+  <!-- Code Card code-box-right -->
+  <g id="code-box-right" data-pptx-bounds="660 190 560 375">
+    <rect x="660" y="194" width="560" height="371" rx="12" fill="#060911" />
+    <rect x="660" y="190" width="560" height="371" rx="12" fill="#0F172A" stroke="#218380" stroke-width="1.5" />
+    <!-- Window Bar -->
+    <rect x="660" y="190" width="560" height="36" rx="12" fill="#1E293B" />
+    <circle cx="680" cy="208" r="5" fill="#D81159" />
+    <circle cx="695" cy="208" r="5" fill="#FFBC42" />
+    <circle cx="710" cy="208" r="5" fill="#218380" />
+    <text x="940.0" y="213" font-size="13" font-weight="bold" fill="#CBD5E1" text-anchor="middle">标准解码提取算法源码 (download.ts)</text>
+    <!-- Code Area -->
+    <text x="680" y="258" font-size="13" font-family="'Microsoft YaHei', Consolas, monospace">
+      <tspan x="680" dy="0"><tspan fill="#475569"> 1 </tspan><tspan fill="#64748B">// client/src/utils/download.ts</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569"> 2 </tspan><tspan fill="#E2E8F0">export function extractFileName(disp: string): string {</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569"> 3 </tspan><tspan fill="#64748B">  // 1. 优先匹配 RFC 5987 格式</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569"> 4 </tspan><tspan fill="#E2E8F0">  const rfcReg = /filename\*=utf-8''([^;]+)/i;</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569"> 5 </tspan><tspan fill="#E2E8F0">  const rfcMatch = disp.match(rfcReg);</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569"> 6 </tspan><tspan fill="#E2E8F0">  if (rfcMatch &amp;&amp; rfcMatch[1]) {</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569"> 7 </tspan><tspan fill="#E2E8F0">    return decodeURIComponent(rfcMatch[1]);</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569"> 8 </tspan><tspan fill="#E2E8F0">  }</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569"> 9 </tspan><tspan fill="#64748B">  // 2. 降级匹配普通 filename="..."</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569">10 </tspan><tspan fill="#E2E8F0">  const reg = /filename="?([^";]+)"?/i;</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569">11 </tspan><tspan fill="#E2E8F0">  const match = disp.match(reg);</tspan></tspan><tspan x="680" dy="22"><tspan fill="#475569">12 </tspan><tspan fill="#E2E8F0">  return match ? decodeURIComponent(match[1]) : 'file';</tspan></tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#73D2DE" />
+    <text x="95" y="618" font-size="14" font-weight="bold" fill="#73D2DE">
+      <tspan x="95" dy="0">💡 架构核心解析：【标准演进】严格遵循 RFC 5987 规范，优先匹配 UTF-8 编码，向下兼容普通 ASCII 文件名。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#73D2DE" text-anchor="end">26 / 30</text>
+  </g>
+
+</svg>

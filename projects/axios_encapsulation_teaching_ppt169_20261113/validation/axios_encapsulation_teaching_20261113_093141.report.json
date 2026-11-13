@@ -1,0 +1,375 @@
+{
+  "schema": "ppt-master.pptx-postflight-report.v1",
+  "status": "passed",
+  "output": {
+    "path": "C:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113\\exports\\axios_encapsulation_teaching_20261113_093141.pptx",
+    "bytes": 175531
+  },
+  "source": {
+    "svg_slide_count": 30,
+    "layout_definition_count": 0,
+    "fingerprint": {
+      "algorithm": "sha256",
+      "digest": "da0ccd2709d12273fa04eaf00e28c863efd7f16dcef5151bee8509a5ff855028",
+      "file_count": 30,
+      "files": [
+        {
+          "file": "slide_01.svg",
+          "sha256": "0cedadca0f56216c355454c0ec376e469dd2c43f013af166d43c21f0cc02c84d"
+        },
+        {
+          "file": "slide_02.svg",
+          "sha256": "7f5390dc745898d42d4301fd7ad454aea9442730bcc4fb40369d3b1770e2ad24"
+        },
+        {
+          "file": "slide_03.svg",
+          "sha256": "9c3836d14a87c274da86ef900123972be1c4962f8bb432d82cf0ff662c49ae22"
+        },
+        {
+          "file": "slide_04.svg",
+          "sha256": "9ff54dde1494ca7b0abbe5a060256271dfa05b1b0b1e300b0580cac25190582b"
+        },
+        {
+          "file": "slide_05.svg",
+          "sha256": "d95521fcbe93af89854244188b5e46bd6ac32930adc6ff01ed2ac56529853996"
+        },
+        {
+          "file": "slide_06.svg",
+          "sha256": "f2f6b213149066c186147ff7bbae40f76185c5afa178c40c57d8b80121fd4758"
+        },
+        {
+          "file": "slide_07.svg",
+          "sha256": "4281749351b972420006a916d75a07c7c8832f5c52e989b6c9f6869adf940f84"
+        },
+        {
+          "file": "slide_08.svg",
+          "sha256": "c6d6a498ed361bb66479873721b55a75242a8218a53ec4f772fbd09f4e29ab73"
+        },
+        {
+          "file": "slide_09.svg",
+          "sha256": "507242a75636efb3e3c6083dbf9ae9fd1385eb4892da222481764135cc8466f0"
+        },
+        {
+          "file": "slide_10.svg",
+          "sha256": "18f72b91d718d9dec3848f71f1202f78ecfc4d1479607a37d059f0aa7996b1e8"
+        },
+        {
+          "file": "slide_11.svg",
+          "sha256": "c86b206c72b088afe766f8dcf7f8f651db8cef614ce8974cedaced8ec3b70e67"
+        },
+        {
+          "file": "slide_12.svg",
+          "sha256": "5e23249fb0f8b8f8f577c797698804b5e54dcd1d8684f57e21c7c15b5c1f6046"
+        },
+        {
+          "file": "slide_13.svg",
+          "sha256": "985861f708168bcd536f987059f96d561c711548f3b4260d8b9651818cc2096a"
+        },
+        {
+          "file": "slide_14.svg",
+          "sha256": "f2eb2d7ad36d49a08119c6fb34125435baa3a06269f7b9751d8415d938d173fb"
+        },
+        {
+          "file": "slide_15.svg",
+          "sha256": "0df10343b58b8fc7c524b1ec1672ffbce253f31d155d5bec72f8572137e0780c"
+        },
+        {
+          "file": "slide_16.svg",
+          "sha256": "72a4cb7249a9a8828f71cbf54671e5a5e999a8b8113e30cec3885a60e72fb1b8"
+        },
+        {
+          "file": "slide_17.svg",
+          "sha256": "321fcca7fe22bc6449b2277ce073a7c88d9bfb25a6fe27d6c144b28b91ca8836"
+        },
+        {
+          "file": "slide_18.svg",
+          "sha256": "fffc30b4c32dab5f642f337b2f47dff7214f3f84c48c80537d79e71cfe61b14d"
+        },
+        {
+          "file": "slide_19.svg",
+          "sha256": "8ee3e7275c1020c1c9e94c541fce0a19d793f384a4ce4427ed934ea6a2d978c0"
+        },
+        {
+          "file": "slide_20.svg",
+          "sha256": "a723ba6b1a510df843d766ab81f45b5580cade919329475af180bef1af727f7a"
+        },
+        {
+          "file": "slide_21.svg",
+          "sha256": "2706e3f8888ddf73a5d5ebff8ad709d3148f3e0f978b8a9ebd33a1fb74b34aae"
+        },
+        {
+          "file": "slide_22.svg",
+          "sha256": "ba29a7b11afebb2e63d40b6b20accafc7c433faff5f21541073b4c1ae5636539"
+        },
+        {
+          "file": "slide_23.svg",
+          "sha256": "fbccb5046368b596088192dc7d17942b617da2dea1afe666f7118b303ef67a37"
+        },
+        {
+          "file": "slide_24.svg",
+          "sha256": "69c575fabb5d6cc836943ac48304e7def506b1e1df931a223ffc184068bc81eb"
+        },
+        {
+          "file": "slide_25.svg",
+          "sha256": "b5182c16fb8ec456c3f5c3d7b498902685ca5649a48afe88fce1bf0a029bb063"
+        },
+        {
+          "file": "slide_26.svg",
+          "sha256": "d495ce261c3dd2e69dfeb131ca03fe34441e20e6e80f31d3775dc32c511f6a7e"
+        },
+        {
+          "file": "slide_27.svg",
+          "sha256": "1e70da22b21b75c4e880ddb15397ea53b34b051c948d50ce98fbaba6478fc80a"
+        },
+        {
+          "file": "slide_28.svg",
+          "sha256": "4d5137e01691666f0db422ee49096d37d32aa469b30c0d08ce4c0964dd478ae9"
+        },
+        {
+          "file": "slide_29.svg",
+          "sha256": "b9fc0d08a41e890dce7192a1171d58105102e2b3e6c7a0a0e69866c279023726"
+        },
+        {
+          "file": "slide_30.svg",
+          "sha256": "a9e4eb8f21026d82a6af5974689dd40d81a0d835c35bb9e3d84a216327b5d61e"
+        }
+      ]
+    },
+    "authoring_roundtrip": null
+  },
+  "package": {
+    "zip_integrity": "passed",
+    "corrupt_member": null,
+    "slides": 30,
+    "notes": 30,
+    "masters": 1,
+    "layouts": 1
+  },
+  "checks": {
+    "zip_integrity": "passed",
+    "slide_count": "passed",
+    "internal_relationships": "enforced-at-build",
+    "structured_package": "not-applicable",
+    "transitions": "enforced-at-build",
+    "animations": "enforced-at-build",
+    "project_svg_contract": "enforced-at-build",
+    "compatibility_normalization": "not-applicable",
+    "authoring_roundtrip": "not-applicable",
+    "quality_gate": "passed",
+    "quality_warnings": "passed",
+    "template_tokens": "passed",
+    "external_images": "passed",
+    "font_portability": "passed"
+  },
+  "quality": {
+    "status": "loaded",
+    "path": "c:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113\\validation\\svg_quality_report.json",
+    "schema": "ppt-master.svg-quality-report.v1",
+    "stage": "final",
+    "source_match": "passed",
+    "source_fingerprint": {
+      "algorithm": "sha256",
+      "digest": "da0ccd2709d12273fa04eaf00e28c863efd7f16dcef5151bee8509a5ff855028",
+      "file_count": 30,
+      "files": [
+        {
+          "file": "slide_01.svg",
+          "sha256": "0cedadca0f56216c355454c0ec376e469dd2c43f013af166d43c21f0cc02c84d"
+        },
+        {
+          "file": "slide_02.svg",
+          "sha256": "7f5390dc745898d42d4301fd7ad454aea9442730bcc4fb40369d3b1770e2ad24"
+        },
+        {
+          "file": "slide_03.svg",
+          "sha256": "9c3836d14a87c274da86ef900123972be1c4962f8bb432d82cf0ff662c49ae22"
+        },
+        {
+          "file": "slide_04.svg",
+          "sha256": "9ff54dde1494ca7b0abbe5a060256271dfa05b1b0b1e300b0580cac25190582b"
+        },
+        {
+          "file": "slide_05.svg",
+          "sha256": "d95521fcbe93af89854244188b5e46bd6ac32930adc6ff01ed2ac56529853996"
+        },
+        {
+          "file": "slide_06.svg",
+          "sha256": "f2f6b213149066c186147ff7bbae40f76185c5afa178c40c57d8b80121fd4758"
+        },
+        {
+          "file": "slide_07.svg",
+          "sha256": "4281749351b972420006a916d75a07c7c8832f5c52e989b6c9f6869adf940f84"
+        },
+        {
+          "file": "slide_08.svg",
+          "sha256": "c6d6a498ed361bb66479873721b55a75242a8218a53ec4f772fbd09f4e29ab73"
+        },
+        {
+          "file": "slide_09.svg",
+          "sha256": "507242a75636efb3e3c6083dbf9ae9fd1385eb4892da222481764135cc8466f0"
+        },
+        {
+          "file": "slide_10.svg",
+          "sha256": "18f72b91d718d9dec3848f71f1202f78ecfc4d1479607a37d059f0aa7996b1e8"
+        },
+        {
+          "file": "slide_11.svg",
+          "sha256": "c86b206c72b088afe766f8dcf7f8f651db8cef614ce8974cedaced8ec3b70e67"
+        },
+        {
+          "file": "slide_12.svg",
+          "sha256": "5e23249fb0f8b8f8f577c797698804b5e54dcd1d8684f57e21c7c15b5c1f6046"
+        },
+        {
+          "file": "slide_13.svg",
+          "sha256": "985861f708168bcd536f987059f96d561c711548f3b4260d8b9651818cc2096a"
+        },
+        {
+          "file": "slide_14.svg",
+          "sha256": "f2eb2d7ad36d49a08119c6fb34125435baa3a06269f7b9751d8415d938d173fb"
+        },
+        {
+          "file": "slide_15.svg",
+          "sha256": "0df10343b58b8fc7c524b1ec1672ffbce253f31d155d5bec72f8572137e0780c"
+        },
+        {
+          "file": "slide_16.svg",
+          "sha256": "72a4cb7249a9a8828f71cbf54671e5a5e999a8b8113e30cec3885a60e72fb1b8"
+        },
+        {
+          "file": "slide_17.svg",
+          "sha256": "321fcca7fe22bc6449b2277ce073a7c88d9bfb25a6fe27d6c144b28b91ca8836"
+        },
+        {
+          "file": "slide_18.svg",
+          "sha256": "fffc30b4c32dab5f642f337b2f47dff7214f3f84c48c80537d79e71cfe61b14d"
+        },
+        {
+          "file": "slide_19.svg",
+          "sha256": "8ee3e7275c1020c1c9e94c541fce0a19d793f384a4ce4427ed934ea6a2d978c0"
+        },
+        {
+          "file": "slide_20.svg",
+          "sha256": "a723ba6b1a510df843d766ab81f45b5580cade919329475af180bef1af727f7a"
+        },
+        {
+          "file": "slide_21.svg",
+          "sha256": "2706e3f8888ddf73a5d5ebff8ad709d3148f3e0f978b8a9ebd33a1fb74b34aae"
+        },
+        {
+          "file": "slide_22.svg",
+          "sha256": "ba29a7b11afebb2e63d40b6b20accafc7c433faff5f21541073b4c1ae5636539"
+        },
+        {
+          "file": "slide_23.svg",
+          "sha256": "fbccb5046368b596088192dc7d17942b617da2dea1afe666f7118b303ef67a37"
+        },
+        {
+          "file": "slide_24.svg",
+          "sha256": "69c575fabb5d6cc836943ac48304e7def506b1e1df931a223ffc184068bc81eb"
+        },
+        {
+          "file": "slide_25.svg",
+          "sha256": "b5182c16fb8ec456c3f5c3d7b498902685ca5649a48afe88fce1bf0a029bb063"
+        },
+        {
+          "file": "slide_26.svg",
+          "sha256": "d495ce261c3dd2e69dfeb131ca03fe34441e20e6e80f31d3775dc32c511f6a7e"
+        },
+        {
+          "file": "slide_27.svg",
+          "sha256": "1e70da22b21b75c4e880ddb15397ea53b34b051c948d50ce98fbaba6478fc80a"
+        },
+        {
+          "file": "slide_28.svg",
+          "sha256": "4d5137e01691666f0db422ee49096d37d32aa469b30c0d08ce4c0964dd478ae9"
+        },
+        {
+          "file": "slide_29.svg",
+          "sha256": "b9fc0d08a41e890dce7192a1171d58105102e2b3e6c7a0a0e69866c279023726"
+        },
+        {
+          "file": "slide_30.svg",
+          "sha256": "a9e4eb8f21026d82a6af5974689dd40d81a0d835c35bb9e3d84a216327b5d61e"
+        }
+      ]
+    },
+    "summary": {
+      "total": 30,
+      "passed": 30,
+      "warnings": 0,
+      "errors": 0
+    },
+    "categories": {
+      "blocking": {
+        "count": 0,
+        "issues": []
+      },
+      "introduced": {
+        "count": 0,
+        "issues": []
+      },
+      "inherited": {
+        "count": 0,
+        "issues": []
+      },
+      "source-import": {
+        "count": 0,
+        "summary": {
+          "warning_count": 0,
+          "by_code": {}
+        }
+      }
+    }
+  },
+  "resources": {
+    "unresolved_template_tokens": [],
+    "fonts": {
+      "stacks": [
+        "'Microsoft YaHei', Arial",
+        "'Microsoft YaHei', Consolas, monospace"
+      ],
+      "generic_only_stacks": [],
+      "unsafe_exported_faces": []
+    },
+    "images": {
+      "data_uri": 0,
+      "local": 0,
+      "external": 0,
+      "external_references": []
+    }
+  },
+  "export_policy": {
+    "project_svg_contract": "strict",
+    "dangerous_normalization_count": 0
+  },
+  "deck_motion": {
+    "transition": {
+      "effect": "fade",
+      "effect_options": {},
+      "duration": 0.4,
+      "auto_advance": null,
+      "sound": null
+    },
+    "animation": {
+      "effect": "none",
+      "effect_request": null,
+      "duration": 0.4,
+      "stagger": 0.5,
+      "trigger": "after-previous"
+    },
+    "cli_overrides": {
+      "transition": false,
+      "transition_duration": false,
+      "auto_advance": false,
+      "transition_sound": false,
+      "animation": false,
+      "animation_duration": false,
+      "animation_stagger": false,
+      "animation_trigger": false
+    },
+    "narration_timings": false
+  },
+  "backup_path": "C:\\Users\\Administrator\\Desktop\\Axios\\projects\\axios_encapsulation_teaching_ppt169_20261113\\backup\\20261113_093141\\svg_output",
+  "conversion_trace_path": null
+}

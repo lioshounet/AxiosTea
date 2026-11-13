@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#73D2DE" opacity="0.06" data-pptx-role="decoration" />
+  
+  
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#73D2DE" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#73D2DE" text-anchor="middle">核心要点一 · 实例基线</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">Axios 实例配置哲学：baseURL、超时与实例隔离</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">打造标准化、易维护且环境隔离的 HTTP 请求基线</text>
+  </g>
+
+  
+  <g id="card-01" data-pptx-bounds="60 190 360 375">
+    <rect x="60" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="80" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="96" y="232" font-size="16" font-weight="bold" fill="#38BDF8" text-anchor="middle">01</text>
+    <text x="120" y="232" font-size="18" font-weight="bold" fill="#38BDF8">baseURL 统一路由配置</text>
+    <line x1="80" y1="258" x2="400" y2="258" stroke="#334155" stroke-width="1" />
+    <text font-size="14" fill="#CBD5E1" x="84" y="290">
+      <tspan>结合 import.meta.env.VITE_APP_BASE_API</tspan></text><text font-size="14" fill="#CBD5E1" x="84" y="312">与 Vite 本地代理 /api，兼顾本地跨域开发与线</text><text font-size="14" fill="#CBD5E1" x="84" y="334"><tspan>上生产部署。</tspan>
+    </text></g>
+  
+  <g id="card-02" data-pptx-bounds="460 190 360 375">
+    <rect x="460" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="460" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="480" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#F59E0B" stroke-width="1" />
+    <text x="496" y="232" font-size="16" font-weight="bold" fill="#F59E0B" text-anchor="middle">02</text>
+    <text x="520" y="232" font-size="18" font-weight="bold" fill="#F59E0B">超时时间安全底线 (timeout)</text>
+    <line x1="480" y1="258" x2="800" y2="258" stroke="#334155" stroke-width="1" />
+    <text font-size="14" fill="#CBD5E1" x="484" y="290">
+      <tspan>配置 timeout: 10000 (10秒)，避免因弱网挂</tspan></text><text font-size="14" fill="#CBD5E1" x="484" y="312">起导致浏览器连接池占满耗尽，</text><text font-size="14" fill="#CBD5E1" x="484" y="334"><tspan>并配合 AbortController 实现精准中断。</tspan>
+    </text></g>
+  
+  <g id="card-03" data-pptx-bounds="860 190 360 375">
+    <rect x="860" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="860" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="880" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#EF4444" stroke-width="1" />
+    <text x="896" y="232" font-size="16" font-weight="bold" fill="#EF4444" text-anchor="middle">03</text>
+    <text x="920" y="232" font-size="18" font-weight="bold" fill="#EF4444">多实例彻底隔离红线</text>
+    <line x1="880" y1="258" x2="1200" y2="258" stroke="#334155" stroke-width="1" />
+    <text font-size="14" fill="#CBD5E1" x="884" y="290">
+      <tspan>创建业务主 service 实例与专职轻量</tspan></text><text font-size="14" fill="#CBD5E1" x="884" y="312">refreshService 实例，彻底切断 401 拦截死</text><text font-size="14" fill="#CBD5E1" x="884" y="334"><tspan>循环递归调用栈。</tspan>
+    </text></g>
+
+  
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#73D2DE" />
+    <text font-weight="bold" font-size="14" fill="#73D2DE" x="95" y="618">
+      <tspan>💡 架构核心解析：【关键准则】绝不在全局 axios 默认对象上挂载拦截器，保障微前端基座与第三方 SDK 请求不受污染。</tspan>
+    </text></g>
+
+  
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#73D2DE" text-anchor="end">05 / 30</text>
+  </g>
+
+</svg>

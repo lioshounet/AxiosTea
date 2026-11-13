@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#73D2DE" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#73D2DE" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#73D2DE" text-anchor="middle">课程体系大纲</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">为什么网络层封装是企业级前端的核心基石？</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">从离散的单点请求调用跃迁至全局全生命周期切面治理中枢</text>
+  </g>
+
+  <!-- Column 1 Card -->
+  <g id="card-01" data-pptx-bounds="60 190 360 375">
+    <rect x="60" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="60" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="80" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#EF4444" stroke-width="1" />
+    <text x="96" y="232" font-size="16" font-weight="bold" fill="#EF4444" text-anchor="middle">01</text>
+    <text x="120" y="232" font-size="18" font-weight="bold" fill="#EF4444">原生裸用缺陷</text>
+    <line x1="80" y1="258" x2="400" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="84" y="290" font-size="14" fill="#CBD5E1">
+      <tspan x="84" dy="0">散落各处的样板代码，缺乏全局鉴权恢复能</tspan><tspan x="84" dy="22">力；并发 401 凭据覆写死锁；连击重复提交引</tspan><tspan x="84" dy="22">发后端脏数据；二进制文件下载异常无法被感</tspan><tspan x="84" dy="22">知。</tspan>
+    </text>
+  </g>
+  <!-- Column 2 Card -->
+  <g id="card-02" data-pptx-bounds="460 190 360 375">
+    <rect x="460" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="460" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="480" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="496" y="232" font-size="16" font-weight="bold" fill="#38BDF8" text-anchor="middle">02</text>
+    <text x="520" y="232" font-size="18" font-weight="bold" fill="#38BDF8">六大核心切面</text>
+    <line x1="480" y1="258" x2="800" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="484" y="290" font-size="14" fill="#CBD5E1">
+      <tspan x="484" dy="0">统一数据解包 · 双Token并发无感刷新 ·</tspan><tspan x="484" dy="22">AbortController请求指纹防重 · 计数器零闪</tspan><tspan x="484" dy="22">烁Loading · 智能指数退避重试 · Blob流解析</tspan><tspan x="484" dy="22">容错。</tspan>
+    </text>
+  </g>
+  <!-- Column 3 Card -->
+  <g id="card-03" data-pptx-bounds="860 190 360 375">
+    <rect x="860" y="194" width="360" height="371" rx="14" fill="#060911" />
+    <rect x="860" y="190" width="360" height="371" rx="14" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <rect x="880" y="210" width="32" height="32" rx="8" fill="#0B0F19" stroke="#10B981" stroke-width="1" />
+    <text x="896" y="232" font-size="16" font-weight="bold" fill="#10B981" text-anchor="middle">03</text>
+    <text x="920" y="232" font-size="18" font-weight="bold" fill="#10B981">全栈联动验证</text>
+    <line x1="880" y1="258" x2="1200" y2="258" stroke="#334155" stroke-width="1" />
+    <text x="884" y="290" font-size="14" fill="#CBD5E1">
+      <tspan x="884" dy="0">配套 Node.js Express 对应后端环境，</tspan><tspan x="884" dy="22">模拟真实的 15s 鉴权过期、503 间歇宕机与流</tspan><tspan x="884" dy="22">导出，配合 Pinia 可视化实时抓包控制台落地验</tspan><tspan x="884" dy="22">证。</tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#73D2DE" />
+    <text x="95" y="618" font-size="14" font-weight="bold" fill="#73D2DE">
+      <tspan x="95" dy="0">💡 架构核心解析：【核心目标】掌握高内聚、低耦合的网络层封装体系，攻关大厂高频面试点与高可用生产架构。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#73D2DE" text-anchor="end">02 / 30</text>
+  </g>
+
+</svg>

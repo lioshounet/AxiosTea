@@ -1,0 +1,168 @@
+{
+  "stage": "stage2",
+  "lang": "zh",
+  "selection_sha256": "f2a947340b487f84c0441c43918e916fba3b3a69bc7898c8a14a5de6ae188601",
+  "recommend": {
+    "delivery_purpose": "presentation",
+    "mode": "custom",
+    "visual_style": "custom",
+    "image_strategy": "custom",
+    "image_usage": [
+      "provided",
+      "placeholder"
+    ],
+    "generation_mode": "continuous"
+  },
+  "page_count": {
+    "value": "30"
+  },
+  "image_notes": {
+    "value": "以深色代码终端卡片、前后端时序泳道图、双向拦截器管道切面图与状态拓扑图为主，强化深色背景下的多个关键源码切面深度解析与架构逻辑。"
+  },
+  "proactive_speaker_notes": {
+    "value": true
+  },
+  "proactive_custom_animations": {
+    "value": false
+  },
+  "proactive_narration_audio": {
+    "value": false
+  },
+  "refine_spec": {
+    "value": false
+  },
+  "design_spec_depth": {
+    "value": "complete"
+  },
+  "design_directions": {
+    "selected": 0,
+    "candidates": [
+      {
+        "id": "dark-tech-console",
+        "name": "极客深色终端架构 (Dark Tech Console)",
+        "note": "专业深色代码终端风格，以深邃黑蓝 (#0B0F19) 为底色，搭配暗蓝卡片 (#1E293B) 与高对比度科技亮色（天青、翡翠绿、琥珀黄），极度聚焦 Axios 核心封装机理、多个源码拆解与前后端联动。",
+        "mode": "custom",
+        "mode_behavior": "以 instructional 教学渐进为骨干，结合 showcase 动态抓包联动演练，层层解析 Axios 封装切面与 Node.js Express 后端对应接口，包含多个详细的代码解析页面。",
+        "visual_style": "custom",
+        "visual_style_behavior": "以 dark-tech 深色质感主导底色 (#0B0F19)，搭配悬浮暗色卡片 (#1E293B) 与精准微光线框 (#334155)，语法与状态高亮突出代码和请求生命周期。",
+        "icons": "tabler-outline",
+        "color": {
+          "name": "极客深色终端",
+          "palette": {
+            "background": "#0B0F19",
+            "secondary_bg": "#1E293B",
+            "primary": "#38BDF8",
+            "accent": "#F59E0B",
+            "secondary_accent": "#10B981",
+            "body_text": "#F8FAFC"
+          }
+        },
+        "typography": {
+          "name": "微软雅黑 + Consolas / JetBrains Mono",
+          "heading": {
+            "primary": "Microsoft YaHei",
+            "english": "Arial",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Consolas",
+            "css": "monospace"
+          },
+          "body_size": 20
+        },
+        "image_strategy": {
+          "name": "深色技术拓扑与前后端时序",
+          "rendering": "custom",
+          "visual": "结构化深色矢量框图、前后端交互时序泳道图与模块拓扑",
+          "mood": "专业、深邃、严谨、沉浸式技术质感",
+          "behavior": "服从深色主题，卡片与线框层次分明，语法高亮清晰。"
+        }
+      },
+      {
+        "id": "cyber-matrix",
+        "name": "赛博矩阵科技 (Cyber Matrix)",
+        "note": "高反差黑灰底色与霓虹蓝绿强调，代码高亮锐利，适合深度全栈开发实训与高强度代码攻坚。",
+        "mode": "custom",
+        "mode_behavior": "概念剖析与代码实操穿插推进，重点强化错误重试、双 Token 队列及防重复提交等硬核逻辑的逐行代码拆解。",
+        "visual_style": "custom",
+        "visual_style_behavior": "由 dark-tech 与 terminal 结合，采用暗灰底色 (#0D1117) 和冷灰卡片 (#161B22)，高亮代码关键字与状态徽章。",
+        "icons": "tabler-outline",
+        "color": {
+          "name": "赛博矩阵",
+          "palette": {
+            "background": "#0D1117",
+            "secondary_bg": "#161B22",
+            "primary": "#58A6FF",
+            "accent": "#F0883E",
+            "secondary_accent": "#3FB950",
+            "body_text": "#C9D1D9"
+          }
+        },
+        "typography": {
+          "name": "微软雅黑 + Fira Code",
+          "heading": {
+            "primary": "Microsoft YaHei",
+            "english": "Arial",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Fira Code",
+            "css": "monospace"
+          },
+          "body_size": 20
+        },
+        "image_strategy": {
+          "name": "高亮终端流",
+          "rendering": "custom",
+          "visual": "高亮代码控制台、数据帧抓包监控图",
+          "mood": "黑客、专注、高效",
+          "behavior": "以高对比色块标示关键变量与函数执行路径。"
+        }
+      },
+      {
+        "id": "deep-space-blueprint",
+        "name": "深空架构蓝图 (Deep Space Blueprint)",
+        "note": "典雅深空蓝背景，融合架构蓝图的精确线框与模块关系网络，兼顾工程严谨性与大厂面试答辩质感。",
+        "mode": "custom",
+        "mode_behavior": "以体系化架构图为核心，从全局四层架构图下钻至具体工具函数实现，条理清晰、层次分明。",
+        "visual_style": "custom",
+        "visual_style_behavior": "由 blueprint 与 dark-tech 结合，采用藏青底色 (#0F172A) 与暗紫蓝强调 (#818CF8)，注重模块边框与连线对齐。",
+        "icons": "tabler-outline",
+        "color": {
+          "name": "深空蓝图",
+          "palette": {
+            "background": "#0F172A",
+            "secondary_bg": "#1E293B",
+            "primary": "#818CF8",
+            "accent": "#F43F5E",
+            "secondary_accent": "#2DD4BF",
+            "body_text": "#F1F5F9"
+          }
+        },
+        "typography": {
+          "name": "微软雅黑 + Segoe UI",
+          "heading": {
+            "primary": "Microsoft YaHei",
+            "english": "Segoe UI",
+            "css": "sans-serif"
+          },
+          "body": {
+            "primary": "Microsoft YaHei",
+            "english": "Consolas",
+            "css": "monospace"
+          },
+          "body_size": 20
+        },
+        "image_strategy": {
+          "name": "架构拓扑图谱",
+          "rendering": "custom",
+          "visual": "精确架构蓝图框线与前后端调用网格",
+          "mood": "宏大、清晰、架构级深度",
+          "behavior": "线框清晰规整，强调父子容器依赖与切面流水线。"
+        }
+      }
+    ]
+  }
+}

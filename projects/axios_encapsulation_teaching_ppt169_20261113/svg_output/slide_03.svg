@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-pptx-page-role="content" font-family="'Microsoft YaHei', Arial">
+  <rect id="bg-canvas" width="1280" height="720" fill="#0B0F19" data-pptx-role="background" />
+  <path id="deco-glow-1" d="M 0,0 L 420,0 C 370,180 500,260 400,440 C 320,580 440,680 340,720 L 0,720 Z" fill="#1E293B" opacity="0.45" data-pptx-role="decoration" />
+  <path id="deco-glow-2" d="M 0,0 L 220,0 C 180,200 280,320 190,500 C 130,620 220,680 180,720 L 0,720 Z" fill="#73D2DE" opacity="0.06" data-pptx-role="decoration" />
+  
+  <!-- Header Group -->
+  <g id="header-group" data-pptx-bounds="60 42 1160 138">
+    <rect x="60" y="42" width="260" height="28" rx="14" fill="#1E293B" stroke="#73D2DE" stroke-width="1.5" />
+    <text x="190" y="61" font-size="14" font-weight="bold" fill="#73D2DE" text-anchor="middle">原生缺陷剖析</text>
+    <text x="60" y="106" font-size="28" font-weight="bold" fill="#F8FAFC">原生 Axios 在大型复杂应用下的六大致命缺陷</text>
+    <text x="60" y="146" font-size="16" fill="#94A3B8">这些隐藏在生产环境中的暗坑，你的代码中招了吗？</text>
+  </g>
+
+  <!-- Quadrant 1 Card -->
+  <g id="quad-card-01" data-pptx-bounds="60 190 560 180">
+    <rect x="60" y="194" width="560" height="176" rx="12" fill="#060911" />
+    <rect x="60" y="190" width="560" height="176" rx="12" fill="#1E293B" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="80" y="206" width="28" height="28" rx="6" fill="#0B0F19" stroke="#EF4444" stroke-width="1" />
+    <text x="94" y="226" font-size="14" font-weight="bold" fill="#EF4444" text-anchor="middle">01</text>
+    <text x="118" y="227" font-size="18" font-weight="bold" fill="#EF4444">痛点 1：多层解包与空指针</text>
+    <text x="84" y="265" font-size="14" fill="#CBD5E1">
+      <tspan x="84" dy="0">Axios 默认将响应包裹在 res.data 中，业务层必须层层手写</tspan><tspan x="84" dy="22">res.data.data，极易引发 TypeError 空指针报错。</tspan>
+    </text>
+  </g>
+  <!-- Quadrant 2 Card -->
+  <g id="quad-card-02" data-pptx-bounds="660 190 560 180">
+    <rect x="660" y="194" width="560" height="176" rx="12" fill="#060911" />
+    <rect x="660" y="190" width="560" height="176" rx="12" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="680" y="206" width="28" height="28" rx="6" fill="#0B0F19" stroke="#F59E0B" stroke-width="1" />
+    <text x="694" y="226" font-size="14" font-weight="bold" fill="#F59E0B" text-anchor="middle">02</text>
+    <text x="718" y="227" font-size="18" font-weight="bold" fill="#F59E0B">痛点 2：Token 刷新竞态死锁</text>
+    <text x="684" y="265" font-size="14" fill="#CBD5E1">
+      <tspan x="684" dy="0">接口 401 过期时若多个请求并发到达，同时发起刷新请求导致新旧 Token</tspan><tspan x="684" dy="22">覆写死锁，页面瞬间雪崩。</tspan>
+    </text>
+  </g>
+  <!-- Quadrant 3 Card -->
+  <g id="quad-card-03" data-pptx-bounds="60 385 560 180">
+    <rect x="60" y="389" width="560" height="176" rx="12" fill="#060911" />
+    <rect x="60" y="385" width="560" height="176" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="80" y="401" width="28" height="28" rx="6" fill="#0B0F19" stroke="#38BDF8" stroke-width="1" />
+    <text x="94" y="421" font-size="14" font-weight="bold" fill="#38BDF8" text-anchor="middle">03</text>
+    <text x="118" y="422" font-size="18" font-weight="bold" fill="#38BDF8">痛点 3：手抖连击脏数据提交</text>
+    <text x="84" y="460" font-size="14" fill="#CBD5E1">
+      <tspan x="84" dy="0">用户狂点提交按钮引发连续重复请求，后端接口若未做幂等控制，</tspan><tspan x="84" dy="22">极易导致订单重复生成或资金重复划扣。</tspan>
+    </text>
+  </g>
+  <!-- Quadrant 4 Card -->
+  <g id="quad-card-04" data-pptx-bounds="660 385 560 180">
+    <rect x="660" y="389" width="560" height="176" rx="12" fill="#060911" />
+    <rect x="660" y="385" width="560" height="176" rx="12" fill="#1E293B" stroke="#A855F7" stroke-width="1.5" />
+    <rect x="680" y="401" width="28" height="28" rx="6" fill="#0B0F19" stroke="#A855F7" stroke-width="1" />
+    <text x="694" y="421" font-size="14" font-weight="bold" fill="#A855F7" text-anchor="middle">04</text>
+    <text x="718" y="422" font-size="18" font-weight="bold" fill="#A855F7">痛点 4：Blob 错误文件劫持</text>
+    <text x="684" y="460" font-size="14" fill="#CBD5E1">
+      <tspan x="684" dy="0">responseType: blob 时后端一旦返回业务错误 JSON，</tspan><tspan x="684" dy="22">会被强行解析为损坏文件直接静默下载，难以捕获异常。</tspan>
+    </text>
+  </g>
+
+  <!-- Summary Banner -->
+  <g id="summary-banner" data-pptx-bounds="60 580 1160 76">
+    <rect x="60" y="584" width="1160" height="72" rx="14" fill="#060911" />
+    <rect x="60" y="580" width="1160" height="72" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <rect x="60" y="580" width="6" height="72" rx="3" fill="#73D2DE" />
+    <text x="95" y="618" font-size="14" font-weight="bold" fill="#73D2DE">
+      <tspan x="95" dy="0">💡 架构核心解析：【架构启示】网络层封装的本质，是对原生 HTTP 交互脆弱性与不可控性的全面工程兜底。</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Group -->
+  <g id="footer-group" data-pptx-bounds="60 670 1160 30" font-size="14">
+    <text x="60" y="688" fill="#94A3B8">Vue 3 + TS 工业级 Axios 深度封装与后端联动实战 · 全栈教学课程</text>
+    <text x="1220" y="688" font-weight="bold" fill="#73D2DE" text-anchor="end">03 / 30</text>
+  </g>
+
+</svg>

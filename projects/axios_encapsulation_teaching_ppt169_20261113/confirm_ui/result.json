@@ -1,0 +1,70 @@
+{
+  "primary_language": "zh-CN",
+  "canvas": "ppt169",
+  "audience": "Vue.js 前端开发者、TypeScript 学习者、全栈架构师及大厂前端求职者",
+  "communication_intent": "专注于 Axios 工业级深度封装本身与后端 Express 实际接口的真实联动，全面讲透请求与响应双向拦截器、双 Token 无感并发刷新、AbortController 请求指纹防重、并发安全计数器 Loading、指数退避重试以及 Blob 文件流异常反解的底层全链路机理",
+  "audience_outcome": "深入掌握 Axios 核心架构原理与模块化解耦封装，打通前端 TypeScript 请求层与后端鉴权、容错、流传输的交互闭环，具备工业级网络中枢的架构设计能力",
+  "core_message": "Axios 工业级深度封装：从单点请求工具到生产级全生命周期网络控制中枢，以双向切面治理为基石，以前后端紧密联动为保障，详细讲解封装的代码的意义和作用\n",
+  "delivery_context": "技术精讲 / 全栈架构实训 / 教学公开课，时长 30-45 分钟，配套前后端真实源码与抓包联动演练",
+  "artifact_afterlife": "企业前端网络层标准规范手册、教学教案讲义及大厂技术面试攻坚宝典",
+  "content_divergence": "",
+  "delivery_purpose": "balanced",
+  "page_count": "30",
+  "mode": "instructional",
+  "visual_style": "brutalist",
+  "color": {
+    "name": "custom",
+    "custom": "深色为底，色卡是[\"#ffbc42\",\"#d81159\",\"#8f2d56\",\"#218380\",\"#73d2de\"]",
+    "palette": {}
+  },
+  "icons": "tabler-outline",
+  "typography": {
+    "name": "微软雅黑 + Consolas / JetBrains Mono",
+    "heading": {
+      "css": "sans-serif",
+      "english": "Arial",
+      "primary": "Microsoft YaHei",
+      "sample_primary": "",
+      "sample_english": ""
+    },
+    "body": {
+      "css": "monospace",
+      "english": "Consolas",
+      "primary": "Microsoft YaHei",
+      "sample_primary": "",
+      "sample_english": ""
+    },
+    "body_size": 24,
+    "sizes": {
+      "title": 42,
+      "subtitle": 32,
+      "annotation": 18
+    },
+    "note": "",
+    "body_size_unit": "px"
+  },
+  "image_usage": [
+    "ai",
+    "web"
+  ],
+  "image_notes": "以深色代码终端卡片、前后端时序泳道图、双向拦截器管道切面图与状态拓扑图为主，强化深色背景下的多个关键源码切面深度解析与架构逻辑。",
+  "image_strategy": {
+    "name": "深色技术拓扑与前后端时序",
+    "rendering": "custom",
+    "visual": "结构化深色矢量框图、前后端交互时序泳道图与模块拓扑",
+    "mood": "专业、深邃、严谨、沉浸式技术质感",
+    "behavior": "服从深色主题，卡片与线框层次分明，语法高亮清晰。"
+  },
+  "image_ai_path": "auto",
+  "proactive_speaker_notes": true,
+  "proactive_custom_animations": false,
+  "proactive_narration_audio": false,
+  "generation_mode": "continuous",
+  "refine_spec": false,
+  "design_spec_depth": "complete",
+  "stage": "final",
+  "status": "confirmed",
+  "stage1_sha256": "c16d558d792d3d754bfc811efef77fcb6ce20a5dbe6111dbea7be0d6a355d6a1",
+  "selection_sha256": "f2a947340b487f84c0441c43918e916fba3b3a69bc7898c8a14a5de6ae188601",
+  "confirmed_at": "2026-11-13T09:21:03"
+}
